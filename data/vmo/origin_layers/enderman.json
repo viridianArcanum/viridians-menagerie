@@ -9,12 +9,12 @@
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "origins:enderian",
+                "origin": "vmo:enderman",
                 "layer": "origins:origin"
             },
             "origins": [
-                "vmo:enderian/pearl",
-                "vmo:enderian/sight"
+                "vmo:enderman/pearl",
+                "vmo:enderman/sight"
             ]
         }
     ],

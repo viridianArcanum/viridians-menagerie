@@ -1,21 +1,9 @@
 {
-    "powers": [
-        "origins:fire_immunity",
-        "vmo:blazeborn/hover",
-        "origins:slow_falling",
-        "origins:like_air",
-        "vmo:lava_affinity",
-        "vmo:blazeborn/fireball",
-        "vmo:blazeborn/fire_aspect",
-        "origins:water_vulnerability",
-        "origins:flame_particles",
-        "origins:damage_from_snowballs",
-        "origins:damage_from_potions"
-    ],
     "icon": {
         "id": "minecraft:blaze_powder"
     },
     "order": 0,
     "impact": 3,
+    "unchoosable": true,
     "loading_priority": 10
 }

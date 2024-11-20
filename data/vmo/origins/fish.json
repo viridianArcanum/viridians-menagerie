@@ -1,0 +1,24 @@
+{
+	"name": "Merling",
+    "description": "These natural inhabitants of the ocean are not used to being out of the water for too long.",
+    "powers": [
+		"origins:water_breathing",
+		"origins:swim_speed",
+		"vmo:fish/dolphins_grace",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:like_water",
+		"vmo:fish/impaling",
+		"vmo:fish/diet",
+		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
+		"vmo:fish/turtle_helmet_breathing"
+	],
+	"icon": {
+		"id": "minecraft:cod"
+	},
+	"order": 0,
+	"impact": 3,
+	"loading_priority": 10
+}

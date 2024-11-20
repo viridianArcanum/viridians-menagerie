@@ -1,0 +1,16 @@
+{
+	"name": "Elytrian",
+    "description": "(Elytra/Parrot)\n\nOften flying around in the winds, elytrians are uncomfortable when they are forced down to earth.",
+    "powers": [
+		"vmo:flight",
+        "vmo:elytra/imitate",
+		"origins:aerial_combatant",
+		"vmo:elytra/armor",
+		"origins:more_kinetic_damage"
+	],
+	"icon": {
+		"id": "minecraft:elytra"
+	},
+	"order": 0,
+	"impact": 1
+}

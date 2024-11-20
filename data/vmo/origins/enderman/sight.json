@@ -2,7 +2,7 @@
     "name": "Instant Teleportation",
     "description": "You teleport to the place you are looking, up to 40 blocks away.",
     "powers": [
-        "vmo:enderian/teleportation"
+        "vmo:enderman/teleportation"
     ],
     "icon": { 
         "id": "minecraft:ender_pearl"

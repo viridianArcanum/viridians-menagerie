@@ -1,19 +1,9 @@
 {
-    "powers": [
-        "origins:fall_immunity",
-        "vmo:cat/zoomies",
-        "origins:velvet_paws",
-        "origins:cat_vision",
-        "origins:scare_creepers",
-        "origins:nine_lives",
-        "origins:carnivore",
-        "vmo:cat/hunger_pangs",
-        "vmo:phantom/neutral"
-    ],
     "icon": {
         "id": "minecraft:string"
     },
     "order": 0,
     "impact": 2,
+    "unchoosable": true,
     "loading_priority": 10
 }

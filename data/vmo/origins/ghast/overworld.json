@@ -1,9 +1,0 @@
-{
-	"name": "Overworld",
-	"description": "You spawn in the overworld.",
-	"icon": {
-		"id": "origins:orb_of_origin"
-	},
-	"order": 0,
-	"impact": 0
-}

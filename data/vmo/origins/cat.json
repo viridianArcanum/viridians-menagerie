@@ -1,0 +1,20 @@
+{
+    "name": "Catfolk",
+    "description": "(Cat/Ocelot)\n\nSharing many features with their namesake, Catfolk are as nimble as they are strong. They are able to sneak up on their prey and take them down with ease.",
+    "powers": [
+        "origins:fall_immunity",
+        "vmo:cat/zoomies",
+        "origins:velvet_paws",
+        "origins:cat_vision",
+        "origins:scare_creepers",
+        "origins:nine_lives",
+        "origins:carnivore",
+        "vmo:cat/hunger_pangs",
+        "vmo:phantom/neutral"
+    ],
+    "icon": {
+        "id": "minecraft:string"
+    },
+    "order": 0,
+    "impact": 2
+}

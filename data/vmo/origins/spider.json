@@ -1,0 +1,18 @@
+{
+    "name": "Aranea",
+    "description": "(Spider/Cave Spider)\n\nTheir dexterous climbing, along with their ability to easily navigate through cobwebs, makes aranea the perfect hunters.",
+    "powers": [
+        "origins:climbing",
+        "origins:master_of_webs",
+        "vmo:spider/neutral",
+        "origins:carnivore",
+        "vmo:spider/variants",
+        "origins:arthropod",
+        "vmo:spider/noise_button"
+    ],
+    "icon": {
+        "id": "minecraft:cobweb"
+    },
+    "order": 0,
+    "impact": 1
+}

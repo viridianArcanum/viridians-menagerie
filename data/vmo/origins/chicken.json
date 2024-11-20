@@ -1,0 +1,16 @@
+{
+	"name": "Avian",
+    "description": "(Chicken)\n\nAvians lost their ability to fly long ago. Now these peaceful creatures can be seen gliding from one place to another.",
+    "powers": [
+		"origins:slow_falling",
+		"origins:like_air",
+		"origins:tailwind",
+		"origins:lay_eggs",
+		"origins:vegetarian"
+	],
+	"icon": {
+		"id": "minecraft:feather"
+	},
+	"order": 0,
+	"impact": 1
+}

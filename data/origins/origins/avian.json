@@ -1,15 +1,9 @@
 {
-	"powers": [
-		"origins:slow_falling",
-		"origins:like_air",
-		"origins:tailwind",
-		"origins:lay_eggs",
-		"origins:vegetarian"
-	],
 	"icon": {
 		"id": "minecraft:feather"
 	},
 	"order": 0,
 	"impact": 1,
+	"unchoosable": true,
 	"loading_priority": 10
 }

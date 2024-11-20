@@ -1,0 +1,5 @@
+{
+    "name": "Light Armor",
+    "description": "You can't fly if you're wearing armor with a protection value higher than chainmail.",
+    "type": "origins:simple"
+}

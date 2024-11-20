@@ -53,7 +53,7 @@
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "origins:avian",
+                "origin": "vmo:chicken",
                 "layer": "origins:origin"
             },
             "origins": [
@@ -148,7 +148,7 @@
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "origins:feline",
+                "origin": "vmo:cat",
                 "layer": "origins:origin"
             },
             "origins": [
@@ -159,11 +159,13 @@
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "origins:merling",
+                "origin": "vmo:fish",
                 "layer": "origins:origin"
             },
             "origins": [
-                "size:standard"
+                "size:standard",
+                "size:small",
+                "size:tiny"
             ]
         },
         {
@@ -244,7 +246,7 @@
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "origins:enderian",
+                "origin": "vmo:enderman",
                 "layer": "origins:origin"
             },
             "origins": [
@@ -637,6 +639,59 @@
             "condition": {
                 "type": "origins:origin",
                 "origin": "vmo:zombie",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:elytra",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:blaze",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:blaze",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:shulker",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:phantom",
                 "layer": "origins:origin"
             },
             "origins": [
