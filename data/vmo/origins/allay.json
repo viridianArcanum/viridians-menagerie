@@ -1,0 +1,21 @@
+{
+	"name": "Allay",
+	"description": "Sprite-like beings of air and light, allay are incredibly skilled at locating and collecting items, and are very in-touch with music.",
+	"powers": [
+		"vmo:allay/hover",
+		"origins:slow_falling",
+		"origins:like_air",
+		"vmo:allay/hoardsight",
+		"vmo:allay/collector",
+		"vmo:allay/spawn",
+		"vmo:allay/self_glow",
+		"vmo:allay/water_walk_damage_when_submerged",
+		"vmo:allay/noise_button",
+		"vmo:allay/particles_glow"
+	],
+	"icon": {
+		"id": "minecraft:amethyst_shard"
+	},
+	"order": 0,
+	"impact": 2
+}

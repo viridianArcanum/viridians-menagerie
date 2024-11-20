@@ -1,0 +1,39 @@
+{
+    "name": "Let's Bee Friends",
+    "description": "You can pet bees to calm them down when they're angry, or just because!",
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.bee.pollinate"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:heart ~ ~1 ~ 0 0 0 1 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "data modify entity @s AngerTime set value 0"
+                }
+            ]
+        }
+    },
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:bee"
+        }
+    },
+    "item_condition": {
+        "type": "origins:empty"
+    },
+    "hands": [
+        "main_hand"
+    ],
+    "action_result": "success"
+}

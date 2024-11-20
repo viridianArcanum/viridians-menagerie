@@ -1,0 +1,6 @@
+{
+    "name": "Suspicious Stew",
+    "description": "You can fill empty bowls with fresh suspicious stew. The effect of the stew depends on what variant of moobloom you are.",
+    "hidden": false,
+    "type": "origins:simple"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Water Averse",
+    "description": "You are physically incapable of submerging yourself in water unless pushed, and take damage if fully submerged.",
+    "type": "origins:multiple",
+    "walk": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water",
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": "<=",
+            "compare_to": 0.4
+        }
+    },
+    "damage": {
+        "type": "origins:damage_over_time",
+        "damage": 0.5,
+        "damage_type": "origins:hurt_by_water",
+        "protection_enchantment": "origins:water_protection",
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    }
+}

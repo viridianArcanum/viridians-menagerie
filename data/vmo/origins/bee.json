@@ -1,0 +1,22 @@
+{
+	"name": "Bee",
+	"description": "Bees are naturally adapted to cultivate and consume honey, and they will go to great lengths to protect their stock.",
+	"powers": [
+		"vmo:bee/hover",
+		"origins:slow_falling",
+		"origins:like_air",
+		"vmo:bee/honey",
+		"vmo:bee/stinger",
+		"vmo:bee/pet",
+		"vmo:bee/nest",
+		"vmo:nectarivore",
+		"origins:arthropod",
+		"vmo:bee/particles_pollen",
+		"vmo:bee/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:honeycomb"
+	},
+	"order": 0,
+	"impact": 2
+}

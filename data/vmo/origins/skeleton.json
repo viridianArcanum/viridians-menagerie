@@ -1,0 +1,18 @@
+{
+	"name": "Skeleton",
+	"description": "Skeletons and their variations are some of the many types of undead creatures that roam the night.",
+	"powers": [
+		"vmo:skeleton/no_organs",
+		"vmo:skeleton/craft_bones",
+		"vmo:skeleton/remove_ribs",
+		"vmo:undead",
+		"vmo:burn_in_sunlight",
+		"vmo:skeleton/neutral",
+		"vmo:skeleton/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:skeleton_skull"
+	},
+	"order": 0,
+	"impact": 3
+}

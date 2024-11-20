@@ -1,0 +1,78 @@
+{
+    "name": "Mycelium Spread",
+    "description": "You can turn grass and dirt into mycelium at the cost of stamina. If you are standing on dirt or grass, there is a chance it will be turned into mycelium at random.",
+    "hidden": false,
+    "type": "origins:multiple",
+    "intentional": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:set_block",
+            "block": "minecraft:mycelium"
+        },
+        "entity_action": {
+            "type": "origins:exhaust",
+            "amount": 20
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "vmo:mycelium_convert"
+        },
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": "main_hand"
+    },
+    "unintentional": {
+        "type": "origins:action_over_time",
+        "interval": 600,
+        "entity_action": {
+            "type": "origins:chance",
+            "success_action": {
+                "type": "origins:block_action_at",
+                "block_action": {
+                    "type": "origins:offset",
+                    "action": {
+                        "type": "origins:set_block",
+                        "block": "minecraft:mycelium"
+                    },
+                    "y": -1
+                }
+            },
+            "chance": 0.33
+        },
+        "condition": {
+            "type": "origins:on_block",
+            "block_condition": {
+                "type": "origins:all_of",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "vmo:dirt"
+                    },
+                    {
+                        "type": "origins:offset",
+                        "condition": {
+                            "type": "origins:in_tag",
+                            "tag": "vmo:air"
+                        },
+                        "y": 1
+                        
+                    }
+                ]
+            }
+        }
+    }
+}

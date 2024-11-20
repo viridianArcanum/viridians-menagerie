@@ -1,0 +1,12 @@
+{
+	"name": "Stray",
+	"description": "Strays are skeletons from frozen biomes who specialize in inflicting slowness.",
+	"powers": [
+		"vmo:skeleton/slowness"
+	],
+	"icon": {
+		"id": "minecraft:skeleton_skull"
+	},
+	"order": 2,
+	"impact": 3
+}

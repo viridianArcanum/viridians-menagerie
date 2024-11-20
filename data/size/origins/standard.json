@@ -1,0 +1,9 @@
+{
+	"name": "Standard Size",
+	"description": "You are the standard two blocks tall.",
+	"icon": {
+		"id": "origins:orb_of_origin"
+	},
+	"order": 2,
+	"impact": 0
+}

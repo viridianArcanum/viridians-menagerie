@@ -1,0 +1,26 @@
+{
+    "name": "Noise Button",
+    "hidden": true,
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        },
+        "if_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.allay.ambient_without_item"
+        },
+        "else_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.allay.ambient_with_item"
+        }
+    },
+    "key": {
+        "key": "key.pickItem"
+    }
+}

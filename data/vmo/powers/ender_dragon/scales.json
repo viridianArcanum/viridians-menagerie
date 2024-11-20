@@ -1,0 +1,97 @@
+{
+    "name": "Tough Scales",
+    "description": "You have tough scales that serve as armor. You are immune to all negative status effects.",
+    "hidden": false,
+    "type": "origins:multiple",
+    "armor": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "id": "*:*",
+            "attribute": "minecraft:generic.armor",
+            "operation": "add_value",
+            "amount": 20
+        },
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "head",
+                    "item_condition": {
+                        "type": "origins:any_of",
+                        "conditions": [
+                            {
+                                "type": "origins:empty"
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:carved_pumpkin"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:any_of",
+                        "conditions": [
+                            {
+                                "type": "origins:empty"
+                            },
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:elytra"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                }
+            ]
+        }
+    },
+    "fire": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:fire"
+        }
+    },
+    "poison": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:mining_fatigue",
+            "minecraft:nausea",
+            "minecraft:blindness",
+            "minecraft:hunger",
+            "minecraft:weakness",
+            "minecraft:poison",
+            "minecraft:wither",
+            "minecraft:unluck",
+            "minecraft:bad_omen",
+            "minecraft:darkness",
+            "minecraft:trial_omen",
+            "minecraft:raid_omen",
+            "minecraft:wind_charged",
+            "minecraft:weaving",
+            "minecraft:oozing",
+            "minecraft:infested"
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "name": "Fire Resistance Stew",
+    "hidden": true,
+    "type": "origins:active_self",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient": {
+                "item": "minecraft:bowl"
+            }
+        },
+        "inverted": false
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.mooshroom.suspicious_milk"
+            },
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:suspicious_stew",
+                    "amount": 1,
+                    "components": {
+                        "food": {
+                            "nutrition": 1,
+                            "saturation": 1,
+                            "effects": [
+                                {
+                                    "effect": {
+                                        "id": "fire_resistance",
+                                        "duration": 80
+                                    },
+                                    "probability": 1
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+	"cooldown": 1200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 7
+    },
+    "key": {
+        "key": "key.use",
+        "continuous": false
+    }
+}

@@ -1,0 +1,70 @@
+{
+	"name": "Adrenaline",
+	"description": "You get a temporary speed boost if you take a significant amount of damage.",
+	"type": "origins:multiple",
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1200,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 4,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_resource",
+				"comparison": "<",
+				"compare_to": 1200
+			}
+		},
+		"min_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_switch",
+			"operation": "set",
+			"change": 0
+		}
+	},
+	"switch": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"start_value": 0
+	},
+	"timer": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_switch",
+				"comparison": "==",
+				"compare_to": 0
+			},
+			"if_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_resource",
+				"change": 1
+			},
+			"else_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_resource",
+				"change": -120
+			}
+		}
+	},
+	"activate": {
+		"type": "origins:self_action_when_hit",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_switch",
+			"change": 1
+		},
+		"damage_condition": {
+			"type": "origins:amount",
+			"comparison": ">=",
+			"compare_to": 4
+		}
+	}
+}

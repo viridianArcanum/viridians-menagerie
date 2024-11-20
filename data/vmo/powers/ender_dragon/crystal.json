@@ -1,0 +1,23 @@
+{
+    "name": "Crystal Healing",
+    "description": "End Crystals heal you when you are in proximity to them.",
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": [
+        {
+            "type": "origins:heal",
+            "amount": 1
+        },
+        {
+            "type": "origins:feed",
+            "nutrition": 1,
+            "saturation": 1
+        }
+    ],
+    "condition": {
+        "type": "origins:command",
+        "command": "execute if entity @e[type = end_crystal, distance = ..30]",
+        "comparison": ">",
+        "compare_to": 0
+    }
+}

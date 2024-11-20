@@ -1,0 +1,24 @@
+{
+    "name": "Strong Jump",
+    "description": "You have a stronger jump, and can fall farther without taking damage.",
+    "type": "origins:multiple",
+    "jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "add_base_early",
+            "amount": 0.3
+        }
+    },
+    "fall_damage": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        },
+        "modifier": {
+            "name": "mirthful_leaps_fall_damage_reduction",
+            "operation": "add_base_early",
+            "amount": -10
+        }
+    }
+}

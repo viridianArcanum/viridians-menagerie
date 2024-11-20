@@ -1,0 +1,37 @@
+{
+    "name": "Berry Lover",
+    "description": "Sweet berries give you more nutrients than they give to others, and you can walk through them without being harmed.",
+    "type": "origins:multiple",
+    "food": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:sweet_berries"
+            }
+        },
+        "food_modifier": {
+            "id": "*:*",
+            "operation": "add_base_early",
+            "amount": 3.0
+        },
+        "saturation_modifier": {
+            "id": "*:*",
+            "operation": "add_base_early",
+            "amount": 0.4
+        }
+    },
+    "immune": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type": "minecraft:sweet_berry_bush"
+        }
+    },
+    "slowness": {
+        "type": "extraorigins:prevent_block_slowness",
+        "blocks": [
+            "minecraft:sweet_berry_bush"
+        ]
+    }
+}

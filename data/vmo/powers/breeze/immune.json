@@ -1,0 +1,6 @@
+{
+    "name": "Immunity",
+    "description": "You are immune to the Wind Charged effect.",
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:wind_charged"
+}

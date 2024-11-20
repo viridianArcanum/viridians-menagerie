@@ -1,0 +1,63 @@
+{
+    "name": "Dragon's Breath",
+    "description": "You can fill empty bottles with Dragon's Breath at the cost of your stamina.",
+    "hidden": false,
+    "type": "origins:active_self",
+    "entity_action": [
+        {
+            "type": "origins:exhaust",
+            "amount": 20
+        },
+        {
+            "type": "origins:give",
+            "stack": {
+                "id": "minecraft:dragon_breath",
+                "amount": 1
+            }
+        },
+        {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "mainhand",
+            "action": {
+                "type": "origins:consume",
+                "amount": 1
+            }
+        },
+        {
+            "type": "origins:play_sound",
+            "sound": "minecraft:item.bottle.fill_dragonbreath",
+            "volume": 1.0,
+            "pitch": 1.0
+        }
+    ],
+    "condition": {
+    	"type": "origins:all_of",
+    	"conditions": [
+            {
+                "type": "origins:food_level",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:glass_bottle"
+                    }
+                }
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active power, %s while holding a glass bottle to trigger."
+        }
+    ]
+}

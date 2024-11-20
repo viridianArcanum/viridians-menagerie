@@ -1,0 +1,8 @@
+{
+    "name": "Put It In Your Mouth",
+    "description": "You have 5 extra slots of inventory.",
+    "type": "origins:inventory",
+    "title": "Mouth",
+    "container_type": "hopper",
+    "drop_on_death": true
+}

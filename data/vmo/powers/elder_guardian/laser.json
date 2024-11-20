@@ -1,0 +1,132 @@
+{
+    "name": "Laser",
+    "description": "You can shoot a beam of magical energy.",
+    "type": "origins:multiple",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active ability, %s to use."
+        }
+    ],
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 6,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 100
+            }
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        }
+    },
+    "activate": {
+        "type": "origins:active_self",
+        "entity_action": [
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:raycast",
+                    "shape_type": "collider",
+                    "fluid_handling": "none",
+                    "bientity_action": [
+                        {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:area_of_effect",
+                                "radius": 2.1,
+                                "shape": "cube",
+                                "bientity_action": {
+                                    "type": "origins:damage",
+                                    "amount": 8,
+                                    "damage_type": "minecraft:magic"
+                                },
+                                "include_actor": true
+                            }
+                        },
+                        {
+                            "type": "origins:actor_action",
+                            "action": {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_resource",
+                                "operation": "set",
+                                "change": 0
+                            }
+                        }
+                    ],
+                    "distance": 15,
+                    "miss_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "operation": "set",
+                        "change": 0
+                    },
+                    "command_step": 0.25,
+                    "command_along_ray": "particle dust{color:[0.5,0.0,0.5],scale:1} ~ ~ ~ 0.1 0.1 0.1 0 3"
+                },
+                "ticks": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.guardian.attack",
+                "volume": 1
+            }
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 100
+        }
+    },
+    "armor_stand": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 15,
+            "block": true,
+            "entity": true,
+            "shape_type": "collider",
+            "fluid_handling": "none",
+            "command_at_hit": "summon minecraft:armor_stand ~ ~ ~ {Invisible:1b, NoAI:1b, Tags:[\"tokill\"]}"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 100
+        }
+    },
+    "armor_stand_obliterator": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:delay",
+            "ticks": 2,
+            "action": {
+                "type": "origins:execute_command",
+                "command": "kill @e[type=minecraft:armor_stand,tag=tokill]"
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 100
+        }
+    }
+}

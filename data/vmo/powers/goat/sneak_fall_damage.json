@@ -1,0 +1,12 @@
+{
+    "name": "Strong Ankles",
+    "description": "You can negate fall damage by sneaking.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:type",
+        "damage_type": "minecraft:fall"
+    },
+    "condition": {
+        "type": "origins:sneaking"
+    }
+}

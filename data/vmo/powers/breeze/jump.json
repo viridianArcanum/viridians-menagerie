@@ -1,0 +1,24 @@
+{
+    "name": "Jump Boost",
+    "description": "The strength of your jump is significantly boosted.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle"
+    },
+    "jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "id": "*:*",
+            "operation": "add_base_early",
+            "amount": 0.5
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "particle cloud ~ ~ ~ 0.3 0.3 0.3 0.01 16 normal @a"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}

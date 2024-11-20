@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"id": "*:*",
+		"attribute": "minecraft:generic.movement_speed",
+		"amount": 0.045,
+		"operation": "add_value"
+	},
+	"loading_priority": 10
+}

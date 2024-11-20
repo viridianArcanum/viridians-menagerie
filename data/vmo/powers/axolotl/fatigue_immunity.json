@@ -1,0 +1,8 @@
+{
+    "name": "Mining Fatigue Immunity",
+    "hidden": true,
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:mining_fatigue"
+    ]
+}

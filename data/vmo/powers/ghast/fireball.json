@@ -1,0 +1,46 @@
+{
+    "name": "Fireball",
+    "description": "You are able to launch a fireball.",
+    "type": "origins:multiple",
+    "shoot": {
+        "type": "origins:fire_projectile",
+        "entity_type": "fireball",
+        "cooldown": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 7
+        },
+        "speed": 1.5,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "sounds": {
+        "type": "origins:active_self",
+        "cooldown": 100,
+        "hud_render": {
+            "should_render": false
+        },
+        "entity_action": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.ghast.warn"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.ghast.shoot"
+            }
+        ],
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active power, trigger with %s"
+        }
+    ]
+}

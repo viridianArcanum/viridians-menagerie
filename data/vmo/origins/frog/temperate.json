@@ -1,0 +1,9 @@
+{
+	"name": "Temperate",
+	"description": "You are adapted to temperate climates.",
+	"icon": {
+		"id": "minecraft:ochre_froglight"
+	},
+	"order": 0,
+	"impact": 2
+}

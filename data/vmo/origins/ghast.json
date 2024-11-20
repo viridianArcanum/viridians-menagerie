@@ -1,0 +1,23 @@
+{
+	"name": "Ghast",
+	"description": "Ghasts are able to gently float to navigate the Nether.",
+	"powers": [
+		"vmo:ghast/fireball",
+		"vmo:ghast/hover",
+		"origins:slow_falling",
+		"origins:like_air",
+		"origins:fire_immunity",
+		"vmo:lava_affinity",
+		"origins:hotblooded",
+		"vmo:ghast/large_but_light",
+		"vmo:ghast/projectile_damage",
+		"vmo:ghast/neutral",
+		"vmo:ghast/particles_ash",
+		"vmo:ghast/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:ghast_tear"
+	},
+	"order": 0,
+	"impact": 3
+}

@@ -1,0 +1,18 @@
+{
+	"name": "Blast Resistance",
+	"description": "You are immune to all types of explosions.",
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:any_of",
+		"conditions": [
+			{
+				"type": "origins:type",
+				"damage_type": "minecraft:explosion"
+			},
+			{
+				"type": "origins:type",
+				"damage_type": "minecraft:fireworks"
+			}
+		]
+	}
+}

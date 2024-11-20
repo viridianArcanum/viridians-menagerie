@@ -1,0 +1,9 @@
+{
+	"name": "Warm",
+	"description": "You are adapted to warm climates.",
+	"icon": {
+		"id": "minecraft:pearlescent_froglight"
+	},
+	"order": 0,
+	"impact": 2
+}

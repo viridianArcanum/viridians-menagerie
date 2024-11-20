@@ -1,0 +1,16 @@
+{
+	"name": "Camel",
+	"description": "Camels are hardy creatures adapted to life in the desert.",
+	"powers": [
+		"vmo:camel/hardy",
+		"vmo:rideable_creature",
+		"vmo:camel/dash",
+		"vmo:camel/long_legs",
+		"vmo:small_appetite"
+	],
+	"icon": {
+		"id": "minecraft:cactus"
+	},
+	"order": 0,
+	"impact": 1
+}

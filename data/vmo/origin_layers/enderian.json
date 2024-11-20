@@ -1,0 +1,22 @@
+{
+    "name": "enderian variant",
+    "gui_title": {
+        "choose_origin": "Choose an enderian variant.",
+        "view_origin": "This is your chosen enderian variant."
+    },
+    "order": 1,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "origins:enderian",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "vmo:enderian/pearl",
+                "vmo:enderian/sight"
+            ]
+        }
+    ],
+    "allow_random": true
+}

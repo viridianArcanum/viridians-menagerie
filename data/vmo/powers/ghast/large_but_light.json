@@ -1,0 +1,11 @@
+{
+    "name": "Large but Light",
+    "description": "You have 3 fewer hearts than a human.",
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "*:*",
+        "attribute": "minecraft:generic.max_health",
+        "operation": "add_value",
+        "amount": -6
+    }
+}

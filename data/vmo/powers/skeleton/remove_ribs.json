@@ -1,0 +1,216 @@
+{
+    "name": "Rib Removal",
+    "description": "You can remove bones from your body to cure status effects at the cost of some health.",
+    "type": "origins:active_self",
+    "entity_action": [
+        {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.skeleton.hurt",
+            "pitch": 1.1,
+            "volume": 0.5
+        },
+        {
+            "type": "origins:heal",
+            "amount": -8
+        },
+        {
+            "type": "origins:execute_command",
+            "command": "effect clear @s"
+        }
+    ],
+    "condition": {
+        "type": "origins:any_of",
+        "conditions": [
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:absorption",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:bad_omen",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:blindness",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:conduit_power",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:darkness",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:dolphins_grace",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:fire_resistance",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:glowing",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:haste",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:health_boost",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:hero_of_the_village",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:hunger",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:infested",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:instant_damage",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:invisibility",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:jump_boost",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:levitation",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:luck",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:mining_fatigue",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:nausea",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:night_vision",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:oozing",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:poison",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:raid_omen",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:regeneration",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:resistance",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:saturation",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:slow_falling",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:slowness",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:speed",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:strength",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:trial_omen",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:unluck",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:water_breathing",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:weakness",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:weaving",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:wind_charged",
+                "min_amplifier": 0
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:wither",
+                "min_amplifier": 0
+            }
+        ]
+    }
+}

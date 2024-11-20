@@ -1,0 +1,18 @@
+{
+    "name": "Innate Silk Touch", 
+    "description": "You can mine blocks with as if you had silk touch, so long as you use your bare hands.",
+    "type": "origins:modify_enchantment_level",
+    "enchantment": "minecraft:silk_touch",
+    "modifier": {
+        "id": "*:*",
+        "operation": "set_total",
+        "amount": 1
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    }
+}

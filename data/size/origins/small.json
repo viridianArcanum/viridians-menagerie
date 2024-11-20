@@ -1,0 +1,12 @@
+{
+	"name": "Small Size",
+	"description": "You are one block tall.",
+	"powers": [
+		"size:middling_height"
+	],
+	"icon": {
+		"id": "origins:orb_of_origin"
+	},
+	"order": 1,
+	"impact": 3
+}

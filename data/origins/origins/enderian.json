@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "vmo:enderian/variants",
+		"vmo:enderian/silk",
+		"origins:water_vulnerability",
+		"origins:pumpkin_hate",
+		"origins:extra_reach",
+		"origins:ender_particles",
+		"origins:damage_from_potions"
+    ],
+    "icon": { 
+        "id": "minecraft:ender_pearl"
+    },
+    "order": 0,
+    "impact": 3,
+    "loading_priority": 10
+}

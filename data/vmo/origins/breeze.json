@@ -1,0 +1,18 @@
+{
+	"name": "Breeze",
+	"description": "The wind itself come to life, breezes .",
+	"powers": [
+		"vmo:breeze/fall",
+		"vmo:breeze/jump",
+		"vmo:breeze/charge",
+		"vmo:breeze/burst",
+		"vmo:breeze/deflect",
+		"vmo:breeze/immune",
+		"vmo:breeze/neutral"
+	],
+	"icon": {
+		"id": "minecraft:breeze_rod"
+	},
+	"order": 0,
+	"impact": 1
+}

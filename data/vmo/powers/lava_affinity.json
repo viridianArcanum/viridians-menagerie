@@ -1,0 +1,33 @@
+{
+    "name": "Lava Affinity",
+    "description": "You can see and swim through lava.",
+    "type": "origins:multiple",
+    "see": {
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 16
+    },
+    "speed": {
+        "type": "origins:modify_lava_speed",
+        "modifier": {
+            "id": ":*",
+            "operation": "add_multiplied_base",
+            "amount": 0.85
+        }
+    },
+    "swim": {
+        "type": "origins:swimming",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:lava"
+                },
+                {
+                    "type": "origins:sprinting"
+                }
+            ]
+        }
+    }
+}

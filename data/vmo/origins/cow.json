@@ -1,0 +1,16 @@
+{
+	"name": "Cow",
+	"description": "Cows have adapted to a wide variety of natural environments, and they are tougher than they appear.",
+	"powers": [
+		"vmo:cow/cowhide",
+		"vmo:adrenaline",
+		"origins:vegetarian",
+		"vmo:cow/variants",
+		"vmo:cow/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:leather"
+	},
+	"order": 0,
+	"impact": 1
+}

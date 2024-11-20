@@ -1,0 +1,144 @@
+{
+    "name": "Nectarivore",
+    "description": "You can only eat flowers, honey, honeycomb, and sugar.",
+    "type": "origins:multiple",
+    "prevent_eat": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:all_of",
+            "conditions":[
+                {
+                    "type": "origins:food"
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:sugar"
+                    },
+                    "inverted": true
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "minecraft:small_flowers"
+                    },
+                    "inverted": true
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "minecraft:tall_flowers"
+                    },
+                    "inverted": true
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:wither_rose"
+                    },
+                    "inverted": true
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:honeycomb"
+                    },
+                    "inverted": true
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:honey_bottle"
+                    },
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "allow_eat_sugar": {
+        "type": "origins:edible_item",
+        "item_action": {
+            "type": "origins:consume"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:sugar"
+            }
+        },
+        "food_component": {
+            "nutrition": 2,
+            "saturation": 0.1
+        }
+    },
+    "allow_eat_small_flowers": {
+        "type": "origins:edible_item",
+        "item_action": {
+            "type": "origins:consume"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "vmo:small_flowers"
+            }
+        },
+        "food_component": {
+            "nutrition": 5,
+            "saturation": 0.6
+        }
+    },
+    "allow_eat_tall_flowers": {
+        "type": "origins:edible_item",
+        "item_action": {
+            "type": "origins:consume"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "vmo:tall_flowers"
+            }
+        },
+        "food_component": {
+            "nutrition": 6,
+            "saturation": 0.8
+        }
+    },
+    "allow_eat_honeycomb": {
+        "type": "origins:edible_item",
+        "item_action": {
+            "type": "origins:consume"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:honeycomb"
+            }
+        },
+        "food_component": {
+            "nutrition": 8,
+            "saturation": 0.6
+        }
+    },
+    "allow_eat_wither_rose": {
+        "type": "origins:edible_item",
+        "item_action": {
+            "type": "origins:consume"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:wither_rose"
+            }
+        },
+        "food_component": {
+            "nutrition": 5,
+            "saturation": 0.6,
+            "effect": {
+                "effect": {
+                    "id": "minecraft:wither",
+                    "duration": 100
+                }
+            }
+        }
+    }
+}

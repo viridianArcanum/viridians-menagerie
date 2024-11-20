@@ -1,0 +1,13 @@
+{
+    "name": "Thin Skin",
+    "description": "You take extra damage from projectiles.",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:projectile"
+    },
+    "modifier": {
+        "id": "*:*",
+        "amount": 1,
+        "operation": "multiply_base_multiplicative"
+    }
+}

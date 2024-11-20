@@ -1,0 +1,45 @@
+{
+    "name": "Hunger Pangs",
+    "description": "You become too weak to break enclosed natural stone if you are too hungry.",
+    "type": "origins:multiple",
+    "weakness": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "id": "minecraft:weakness",
+                "duration": 80,
+                "amplifier": 0,
+                "show_icon": true,
+                "show_particles": false
+            }
+        },
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 6
+        }
+    },
+    "weak_arms": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "id": "**",
+            "amount": -1,
+            "operation": "multiply_total_multiplicative"
+        },
+        "block_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "origins:natural_stone"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 6
+        }
+    }
+}

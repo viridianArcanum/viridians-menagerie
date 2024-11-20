@@ -1,0 +1,11 @@
+{
+    "name": "Elder Constitution",
+    "description": "You have 10 extra hearts of health.",
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "*:*",
+        "attribute": "minecraft:generic.max_health",
+        "operation": "add_value",
+        "amount": 20
+    }
+}

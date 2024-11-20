@@ -1,0 +1,14 @@
+{
+	"name": "Orange Tulip",
+	"description": "You grow orange tulips on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/weakness",
+		"vmo:cow/moobloom/grow/orange_tulip"
+		
+	],
+	"icon": {
+		"id": "minecraft:orange_tulip"
+	},
+	"order": 6,
+	"impact": 1
+}

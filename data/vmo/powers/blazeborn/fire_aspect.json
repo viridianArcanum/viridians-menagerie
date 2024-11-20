@@ -1,0 +1,322 @@
+{
+    "name": "Fire Aspect",
+    "description": "You ignite enemies with your attacks. You can ignite blocks and cook food with your bare hands in exchange for stamina.",
+    "type": "origins:multiple",
+    "fire_aspect": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:fire_aspect",
+        "modifier": {
+            "operation": "set_total",
+            "amount": 1
+        }
+    },
+    "blocks": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:exhaust",
+            "amount": 20
+        },
+        "block_action": {
+            "type": "origins:offset",
+            "action": {
+                "type": "origins:set_block",
+                "block": "minecraft:fire"
+            },
+            "y": 1
+        },
+        "block_condition": {
+            "type": "origins:offset",
+            "condition": {
+                "type": "origins:block",
+                "block": "minecraft:air"
+            },
+            "y": 1
+        },
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "salmon": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:cooked_salmon"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 10
+            }
+        ],
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:salmon"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "cod": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:cooked_cod"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 10
+            }
+        ],
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:cod"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "rabbit": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:cooked_rabbit"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 10
+            }
+        ],
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:rabbit"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "porkchop": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:cooked_porkchop"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 10
+            }
+        ],
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:porkchop"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "mutton": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:cooked_mutton"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 10
+            }
+        ],
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:mutton"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "chicken": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:cooked_chicken"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 10
+            }
+        ],
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:chicken"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "beef": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:give",
+                "stack": {
+                    "id": "minecraft:cooked_beef"
+                }
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 10
+            }
+        ],
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:beef"
+            }
+        },
+        "trigger": "start",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "spawn location",
+    "gui_title": {
+        "choose_origin": "Choose a spawn location.",
+        "view_origin": "This is your chosen spawn location."
+    },
+    "order": 1,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "origins:blazeborn",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "vmo:blazeborn/nether",
+                "vmo:blazeborn/overworld"
+            ]
+        }
+    ],
+    "allow_random": true
+}

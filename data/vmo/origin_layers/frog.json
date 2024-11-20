@@ -1,0 +1,23 @@
+{
+    "name": "frog variant",
+    "gui_title": {
+        "choose_origin": "Choose a frog variant.",
+        "view_origin": "This is your chosen frog variant."
+    },
+    "order": 1,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:frog",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "vmo:frog/cold",
+                "vmo:frog/temperate",
+                "vmo:frog/warm"
+            ]
+        }
+    ],
+    "allow_random": true
+}

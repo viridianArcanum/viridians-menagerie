@@ -1,0 +1,12 @@
+{
+	"name": "Skeleton",
+	"description": "Skeletons are found in most biomes.",
+	"powers": [
+		"vmo:skeleton/projectile_familiarity"
+	],
+	"icon": {
+		"id": "minecraft:skeleton_skull"
+	},
+	"order": 1,
+	"impact": 3
+}

@@ -1,0 +1,648 @@
+{
+    "name": "size",
+    "gui_title": {
+        "choose_origin": "Choose a size.",
+        "view_origin": "This is your chosen size."
+    },
+    "order": 10,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:allay",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small",
+                "size:tiny"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:arachnid/common",
+                "layer": "vmo:arachnid"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:arachnid/cave",
+                "layer": "vmo:arachnid"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:armadillo",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "origins:avian",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:axolotl",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:bat",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:bee",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:breeze",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:camel",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:centaur",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:cow",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:creeper",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "origins:feline",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "origins:merling",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:moss",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:large",
+                "size:standard",
+                "size:small",
+                "size:tiny"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:skeleton/bogged",
+                "layer": "vmo:skeleton"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:skeleton/skeleton",
+                "layer": "vmo:skeleton"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:skeleton/stray",
+                "layer": "vmo:skeleton"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:guardian",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:elder_guardian",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:ender_dragon",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "origins:enderian",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:large",
+                "size:standard",
+                "size:small",
+                "size:tiny"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:frog",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small",
+                "size:tiny"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:ghast",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:glow_squid",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:goat",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:hoglin",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:fox",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:iron",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:llama",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:magma_cube",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:obsidian",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:panda",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "extraorigins:piglin",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:polar_bear",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:rabbit",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:small",
+                "size:tiny"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:ravager",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:sculk",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:sheep",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:silverfish",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:skeleton_horse",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:slime",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:sniffer",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:snow",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:soul",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:squid",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:strider",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:totem",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:turtle",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:vex",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:void",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:tiny",
+                "size:small",
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:warden",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:wither",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:wither_skeleton",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:wolf",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:small",
+                "size:standard"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:zoglin",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard",
+                "size:large"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:zombie",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "size:standard"
+            ]
+        }
+    ],
+    "allow_random": true
+}

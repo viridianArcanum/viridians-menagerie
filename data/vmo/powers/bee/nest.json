@@ -1,0 +1,96 @@
+{
+    "name": "Beekeeping",
+    "description": "You can harvest bee nests without enchantments, and you can craft your own bee nests.",
+    "hidden": false,
+    "type": "origins:multiple",
+    "break": {
+        "type": "origins:action_on_block_break",
+        "block_action": [
+            {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:item ~ ~ ~ {Item:{id:\"minecraft:bee_nest\",Count:1b}}",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 10,
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[type=bee, distance= ..48] run data modify entity @s AngerTime set value 0",
+                    "permission_level": 4
+                }
+            }
+        ],
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:bee_nest"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:enchantment",
+                "enchantment": "minecraft:silk_touch",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            "inverted": true
+        },
+        "only_when_harvested": false
+    },
+    "craft_nest": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "*:*",
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+                "xxx",
+                "xox",
+                "xxx"
+            ],
+            "key": {
+                "x": {
+                    "tag": "planks"
+                },
+                "o": {
+                    "item": "honey_bottle"
+                }
+            },
+            "result": {
+                "id": "bee_nest",
+                "count": 1
+            }
+        }
+    },
+    "badges": [
+        {
+            "type": "origins:crafting_recipe",
+            "sprite": "origins:textures/gui/badge/recipe.png",
+            "recipe": {
+                "id": "*:*",
+                "type": "minecraft:crafting_shaped",
+                "key": {
+                    "O": {
+                        "item": "minecraft:honey_bottle"
+                    },
+                    "X": {
+                        "tag": "minecraft:planks"
+                    }
+                },
+                "pattern": [
+                    "XXX",
+                    "XOX",
+                    "XXX"
+                ],
+                "result": {
+                    "id": "minecraft:bee_nest"
+                }
+            }
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Note: Bees may appear aggressive for a very brief period after breaking the nest."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:moss_block",
+      "#minecraft:bee_growables",
+      "#minecraft:saplings",
+      "#minecraft:tall_flowers",
+      "#minecraft:underwater_bonemeals",
+      "minecraft:grass_block",
+      "minecraft:short_grass"
+    ]
+  }

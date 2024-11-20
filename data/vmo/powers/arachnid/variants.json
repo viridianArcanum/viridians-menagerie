@@ -1,0 +1,5 @@
+{
+    "name": "Spider Variants",
+    "description": "There are two existing types of spider, each with their own unique features: the common spider and the cave spider.",
+    "type": "origins:simple"
+}

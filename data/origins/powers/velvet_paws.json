@@ -1,0 +1,10 @@
+{
+    "name": "Velvet Paws",
+    "description": "Your footsteps don't create any vibrations, allowing you to move silently.",
+    "type": "origins:prevent_game_event",
+    "events": [
+        "minecraft:step",
+        "minecraft:hit_ground"
+    ],
+    "loading_priority": 10
+}

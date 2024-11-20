@@ -1,0 +1,14 @@
+{
+	"name": "Azure Bluet",
+	"description": "You grow azure bluets on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/blindness",
+		"vmo:cow/moobloom/grow/azure_bluet"
+		
+	],
+	"icon": {
+		"id": "minecraft:azure_bluet"
+	},
+	"order": 4,
+	"impact": 1
+}

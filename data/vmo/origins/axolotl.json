@@ -1,0 +1,21 @@
+{
+	"name": "Axolotl",
+	"description": "Like their namesake, axolomeh are highly adapted to life in lush caves.",
+	"powers": [
+		"vmo:amphibious",
+		"vmo:aquatic_adaptations",
+		"vmo:axolotl/play_dead",
+		"vmo:axolotl/blessing",
+		"origins:carnivore",
+		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
+		"vmo:axolotl/fatigue_immunity",
+		"vmo:axolotl/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:axolotl_bucket"
+	},
+	"order": 0,
+	"impact": 2
+}

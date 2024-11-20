@@ -1,0 +1,36 @@
+{
+    "name": "Curl",
+    "description": "You can curl up into a ball to protect yourself, and reduce incoming damage. You cannot move while you are curled up.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "armor": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "id": "*:*",
+            "attribute": "minecraft:generic.armor",
+            "operation": "add_value",
+            "amount": 8
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "no_move": {
+        "type": "origins:modify_velocity",
+        "modifier": {
+            "amount": 0,
+            "operation": "set_total"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}

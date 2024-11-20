@@ -1,0 +1,11 @@
+{
+    "name": "Pack Horse",
+    "description": "You have extra carrying capacity.",
+    "type": "origins:inventory",
+    "title": "Pack Horse Inventory",
+    "container_type": "chest",
+    "drop_on_death": true,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

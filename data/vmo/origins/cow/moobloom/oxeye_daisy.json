@@ -1,0 +1,14 @@
+{
+	"name": "Oxeye Daisy",
+	"description": "You grow oxeye daisies on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/regeneration",
+		"vmo:cow/moobloom/grow/oxeye_daisy"
+		
+	],
+	"icon": {
+		"id": "minecraft:oxeye_daisy"
+	},
+	"order": 9,
+	"impact": 1
+}

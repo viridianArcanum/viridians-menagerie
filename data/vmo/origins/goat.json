@@ -1,0 +1,16 @@
+{
+	"name": "Goat",
+	"description": "Often thought to be jovial partygoers, goats are deceptively agile and strong.",
+	"powers": [
+		"vmo:goat/ram",
+		"vmo:goat/leap",
+		"vmo:goat/horn",
+        "vmo:cow/cow/milk",
+		"vmo:goat/sneak_fall_damage",
+		"origins:vegetarian",
+		"vmo:goat/noise_button"
+	],
+	"icon": "minecraft:goat_horn",
+	"order": 0,
+	"impact": 1
+}

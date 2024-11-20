@@ -1,0 +1,15 @@
+{
+	"name": "Wither Rose",
+	"description": "You grow wither roses on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/wither",
+		"vmo:cow/moobloom/grow/wither_rose",
+        "vmo:cow/moobloom/immune_wither"
+		
+	],
+	"icon": {
+		"id": "minecraft:wither_rose"
+	},
+	"order": 12,
+	"impact": 1
+}

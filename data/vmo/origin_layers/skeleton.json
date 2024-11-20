@@ -1,0 +1,23 @@
+{
+    "name": "skeleton variant",
+    "gui_title": {
+        "choose_origin": "Choose a skeleton variant.",
+        "view_origin": "This is your chosen skeleton variant."
+    },
+    "order": 1,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:skeleton",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "vmo:skeleton/bogged",
+                "vmo:skeleton/skeleton",
+                "vmo:skeleton/stray"
+            ]
+        }
+    ],
+    "allow_random": true
+}

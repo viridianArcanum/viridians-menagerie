@@ -1,0 +1,23 @@
+{
+    "name": "Turtle Helmet Breathing",
+    "hidden": true,
+    "type": "origins:multiple",
+    "helmet_breathe": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:gain_air",
+            "value": 20
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "head",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:turtle_helmet"
+                }
+            }
+        }
+    }
+}

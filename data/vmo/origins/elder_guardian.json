@@ -1,0 +1,23 @@
+{
+	"name": "Elder Guardian",
+	"description": "Elder Guardians are more mature and more powerful than their younger counterparts.",
+	"powers": [
+		"vmo:bimodal_respiration",
+		"vmo:elder_guardian/constitution",
+		"vmo:elder_guardian/scales",
+		"vmo:guardian/spikes",
+		"vmo:elder_guardian/laser",
+		"vmo:elder_guardian/curse",
+		"vmo:aquatic_adaptations",
+		"vmo:piscivore",
+		"origins:aquatic",
+		"vmo:guardian/neutral",
+		"vmo:elder_guardian/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:trident"
+	},
+	"order": 0,
+	"impact": 3,
+	"unchoosable": true
+}

@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "origins:climbing",
+        "origins:master_of_webs",
+        "vmo:arachnid/neutral",
+        "origins:carnivore",
+        "vmo:arachnid/variants",
+        "origins:arthropod",
+        "vmo:arachnid/noise_button"
+    ],
+    "icon": {
+        "id": "minecraft:cobweb"
+    },
+    "order": 0,
+    "impact": 1,
+    "loading_priority": 10
+}

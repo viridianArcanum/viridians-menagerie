@@ -1,0 +1,10 @@
+{
+    "name": "Small Appetite",
+    "description": "You need to eat less than other creatures.",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "id": "*:*",
+        "operation": "multiply_base_multiplicative",
+        "amount": -0.75
+    }
+}

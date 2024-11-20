@@ -1,0 +1,13 @@
+{
+	"name": "Tiny Size",
+	"description": "You are half a block tall.",
+	"powers": [
+		"size:bite_sized",
+		"size:jockey"
+	],
+	"icon": {
+		"id": "origins:orb_of_origin"
+	},
+	"order": 0,
+	"impact": 3
+}

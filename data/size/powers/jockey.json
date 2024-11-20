@@ -1,0 +1,7 @@
+{
+    "type": "extraorigins:start_riding",
+    "key": {
+        "key": "key.loadToolbarActivator"
+    },
+    "loading_priority": 10
+}

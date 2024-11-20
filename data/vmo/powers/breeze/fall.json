@@ -1,0 +1,9 @@
+{
+    "name": "Feather Falling",
+    "description": "You don't take damage from falling.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:type",
+        "damage_type": "minecraft:fall"
+    }
+}

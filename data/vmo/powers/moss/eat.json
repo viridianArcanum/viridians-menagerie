@@ -1,0 +1,159 @@
+{
+    "name": "Made of Moss",
+    "description": "You don't have a stomach, and you cannot eat food or drink potions. You can consume moss and moss carpet to regain health.",
+    "type": "origins:multiple",
+    "no_food": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:food"
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:moss_block"
+                    },
+                    "inverted": true
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:moss_carpet"
+                    },
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "no_potions": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:potion"
+            }
+        }
+    },
+    "moss": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:moss_block"
+            }
+        },
+        "food_component": {
+            "nutrition": 4,
+            "saturation": 0.4
+        },
+        "use_action": "eat"
+    },
+    "carpet": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:moss_carpet"
+            }
+        },
+        "food_component": {
+            "nutrition": 2,
+            "saturation": 0.2
+        },
+        "use_action": "eat"
+    },
+    "eat_moss": {
+        "type": "origins:edible_item",
+        "entity_action": [
+            {
+                "type": "origins:heal",
+                "amount": 2
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 3,
+                "action": {
+                    "type": "origins:heal",
+                    "amount": 2
+                }
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 5,
+                "action": {
+                    "type": "origins:heal",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:item.bone_meal.use"
+            }
+        ],
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:moss_block"
+            }
+        },
+        "food_component": {
+            "nutrition": 0,
+            "saturation": 0,
+            "can_always_eat": true
+        }
+    },
+    "eat_meal": {
+        "type": "origins:edible_item",
+        "entity_action": [
+            {
+                "type": "origins:heal",
+                "amount": 1
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 3,
+                "action": {
+                    "type": "origins:heal",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 5,
+                "action": {
+                    "type": "origins:heal",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:item.bone_meal.use"
+            }
+        ],
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:moss_carpet"
+            }
+        },
+        "food_component": {
+            "nutrition": 0,
+            "saturation": 0,
+            "can_always_eat": true
+        }
+    },
+    "no_healing": {
+        "type": "origins:disable_regen"
+    },
+    "no_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:feed",
+            "nutrition": 4,
+            "saturation": 0
+        }
+    }
+}

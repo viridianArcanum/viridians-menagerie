@@ -1,0 +1,16 @@
+{
+	"name": "Centaur",
+	"description": "Centaurs embody the best qualities of both humans and horses. They are remarkably smart, fast, and strong.",
+	"powers": [
+		"vmo:horse/gallop",
+		"vmo:horse/pack_horse",
+		"vmo:rideable_creature",
+		"vmo:horse/long_legs",
+		"vmo:horse/strong_jump"
+	],
+	"icon": {
+		"id": "minecraft:saddle"
+	},
+	"order": 0,
+	"impact": 1
+}

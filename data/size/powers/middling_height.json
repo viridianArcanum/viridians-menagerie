@@ -1,0 +1,48 @@
+{
+    "name": "1.0",
+    "hidden": true,
+    "type": "origins:multiple",
+    "size": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "id": "*:*_scale",
+                "attribute": "minecraft:generic.scale",
+                "operation": "add_value",
+                "amount": -0.5
+            },
+            {
+                "id": "*:*_attack_speed",
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "add_value",
+                "amount": 0.25
+            },
+            {
+                "id": "*:*_movement_speed",
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "add_value",
+                "amount": -0.0075
+            },
+            {
+                "id": "*:*_entity_reach",
+                "attribute": "minecraft:player.entity_interaction_range",
+                "operation": "add_value",
+                "amount": -0.125
+            },
+            {
+                "id": "*:*_block_reach",
+                "attribute": "minecraft:player.block_interaction_range",
+                "operation": "add_value",
+                "amount": -0.5
+            }
+        ]
+    },
+    "fall": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "id": "*:*",
+            "operation": "multiply_base_multiplicative",
+            "amount": -0.5
+        }
+    }
+}

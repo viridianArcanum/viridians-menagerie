@@ -1,0 +1,33 @@
+{
+    "name": "moobloom variant",
+    "gui_title": {
+        "choose_origin": "Choose a moobloom variant.",
+        "view_origin": "This is your chosen moobloom variant."
+    },
+    "order": 2,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:cow/moobloom",
+                "layer": "vmo:cow"
+            },
+            "origins": [
+                "vmo:cow/moobloom/allium",
+                "vmo:cow/moobloom/azure_bluet",
+                "vmo:cow/moobloom/blue_orchid",
+                "vmo:cow/moobloom/cornflower",
+                "vmo:cow/moobloom/dandelion",
+                "vmo:cow/moobloom/lily_of_the_valley",
+                "vmo:cow/moobloom/orange_tulip",
+                "vmo:cow/moobloom/oxeye_daisy",
+                "vmo:cow/moobloom/pink_tulip",
+                "vmo:cow/moobloom/poppy",
+                "vmo:cow/moobloom/red_tulip",
+                "vmo:cow/moobloom/white_tulip",
+                "vmo:cow/moobloom/wither_rose"
+            ]
+        }
+    ],
+    "allow_random": true
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Glowing",
+    "description": "You glow when you are in the line of sight of other entities.",
+    "type": "origins:self_glow",
+    "bientity_condition": {
+        "type": "origins:can_see"
+    },
+    "use_teams": false,
+    "red": 0.0,
+    "green": 1.0,
+    "blue": 1.0
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Allium",
+	"description": "You grow alliums on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/fire_resistance",
+		"vmo:cow/moobloom/grow/allium"
+		
+	],
+	"icon": {
+		"id": "minecraft:allium"
+	},
+	"order": 3,
+	"impact": 1
+}

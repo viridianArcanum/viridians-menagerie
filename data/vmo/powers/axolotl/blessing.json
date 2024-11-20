@@ -1,0 +1,97 @@
+{
+    "name": "Axolotl's Blessing",
+    "description": "You can simultaneously cure another entity of mining fatigue and grant them 5 seconds of regeneration.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 200,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 2,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 200
+            }
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        }
+    },
+    "blessing": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": [
+            {
+                "type": "origins:target_action",
+                "action": [
+                    {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "id": "minecraft:regeneration",
+                            "duration": 100
+                        }
+                    },
+                    {
+                        "type": "origins:clear_effect",
+                        "effect": "minecraft:mining_fatigue"
+                    }
+                ]
+            },
+            {
+                "type": "origins:actor_action",
+                "action": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "operation": "set",
+                        "change": 0
+                    },
+                    {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:submerged_in",
+                            "fluid": "minecraft:water"
+                        },
+                        "if_action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.axolotl.idle_water"
+                        },
+                        "else_action": {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.axolotl.idle_air"
+                        }
+                    }
+                ]
+            }
+        ],
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 200
+        }
+    },
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Right-click an entity with an empty hand to activate."
+        }
+    ]
+}

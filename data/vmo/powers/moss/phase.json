@@ -1,0 +1,82 @@
+{
+    "name": "Camoflauge",
+    "description": "You are able to mold yourself to and blend in with moss.",
+    "type": "origins:multiple",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/toggle.png",
+            "text": "Toggle with %s"
+        }
+    ],
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "retain_state": false
+    },
+    "phasing": {
+        "type": "origins:phasing",
+        "render_type": "blindness",
+        "blacklist": false,
+        "view_distance": 10,
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "vmo:moss"
+        },
+        "phase_down_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "invis_in_block": {
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "vmo:air"
+                    },
+                    "radius": 1,
+                    "shape": "cube",
+                    "comparison": "<",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:any_of",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:water"
+                            },
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:lava"
+                            }
+                        ]
+                    },
+                    "inverted": true
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "arachnid variant",
+    "gui_title": {
+        "choose_origin": "Choose an arachnid variant.",
+        "view_origin": "This is your chosen arachnid variant."
+    },
+    "order": 1,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "origins:arachnid",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "vmo:arachnid/common",
+                "vmo:arachnid/cave"
+            ]
+        }
+    ],
+    "allow_random": true
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Hoardsight",
+    "description": "You can sense nearby dropped items.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle"
+    },
+    "glow": {
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:item"
+        },
+        "use_teams": false,
+        "red": 0.0,
+        "green": 1.0,
+        "blue": 1.0,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}

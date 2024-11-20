@@ -1,0 +1,9 @@
+{
+	"name": "Cold",
+	"description": "You are adapted to cold climates.",
+	"icon": {
+		"id": "minecraft:verdant_froglight"
+	},
+	"order": 0,
+	"impact": 2
+}

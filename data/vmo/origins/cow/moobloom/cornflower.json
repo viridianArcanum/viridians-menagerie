@@ -1,0 +1,14 @@
+{
+	"name": "Cornflower",
+	"description": "You grow cornflowers on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/jump_boost",
+		"vmo:cow/moobloom/grow/cornflower"
+		
+	],
+	"icon": {
+		"id": "minecraft:cornflower"
+	},
+	"order": 10,
+	"impact": 1
+}

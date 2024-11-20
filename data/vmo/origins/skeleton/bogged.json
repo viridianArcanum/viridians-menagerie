@@ -1,0 +1,12 @@
+{
+	"name": "Bogged",
+	"description": "Strays are skeletons from swampy biomes who specialize in inflicting poison.",
+	"powers": [
+		"vmo:skeleton/poison"
+	],
+	"icon": {
+		"id": "minecraft:skeleton_skull"
+	},
+	"order": 0,
+	"impact": 3
+}

@@ -1,0 +1,69 @@
+{
+    "name": "Aquatic Adaptations",
+    "description": "Your underwater swimming speed and underwater mining speed are increased. You have perfect vision underwater. You do not float or sink unless you want to.",
+    "type": "origins:multiple",
+    "swim_speed": {
+        "type": "origins:attribute",
+        "modifier": {
+            "id": "*:*",
+            "attribute": "additionalentityattributes:generic.water_speed",
+            "amount": 1.5,
+		    "operation": "add_multiplied_base"
+        }
+    },
+    "underwater": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "amount": 4
+        },
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:aqua_affinity",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "ungrounded": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "amount": 4
+        },
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "vision": {
+		"type": "origins:night_vision",
+		"strength": 1.0,
+		"condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+	},
+    "like_water": {
+        "type": "origins:like_water"
+    }
+}

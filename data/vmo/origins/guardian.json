@@ -1,0 +1,19 @@
+{
+	"name": "Guardian",
+	"description": "Guardians are fierce and powerful protectors of ocean monuments.",
+	"powers": [
+		"vmo:bimodal_respiration",
+		"vmo:guardian/scales",
+		"vmo:guardian/spikes",
+		"vmo:guardian/laser",
+		"vmo:aquatic_adaptations",
+		"vmo:piscivore",
+		"origins:aquatic",
+		"vmo:guardian/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:prismarine_shard"
+	},
+	"order": 0,
+	"impact": 2
+}

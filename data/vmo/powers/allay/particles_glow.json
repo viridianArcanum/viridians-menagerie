@@ -1,0 +1,11 @@
+{
+    "name": "Particles",
+    "hidden": true,
+    "type": "origins:particle",
+    "particle": "minecraft:glow",
+    "frequency": 4,
+    "condition": {
+        "type": "origins:on_block",
+        "inverted": true
+    }
+}

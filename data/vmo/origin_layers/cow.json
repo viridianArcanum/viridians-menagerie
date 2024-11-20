@@ -1,0 +1,23 @@
+{
+    "name": "cow variant",
+    "gui_title": {
+        "choose_origin": "Choose a cow variant.",
+        "view_origin": "This is your chosen cow variant."
+    },
+    "order": 1,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:cow",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "vmo:cow/cow",
+                "vmo:cow/moobloom",
+                "vmo:cow/mooshroom"
+            ]
+        }
+    ],
+    "allow_random": true
+}

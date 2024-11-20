@@ -1,0 +1,15 @@
+{
+    "name": "Wind Charge",
+    "description": "You can fire wind charges at will.",
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:wind_charge",
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 5
+    },
+    "sound": "minecraft:entity.wind_charge.wind_burst",
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

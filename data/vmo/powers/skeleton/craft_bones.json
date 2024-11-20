@@ -1,0 +1,22 @@
+{
+    "name": "Transmutation",
+    "description": "You are able to craft bones from bone meal.",
+    "type": "origins:recipe",
+    "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "id": "origins:bone_from_meal",
+        "pattern": [
+            "  O",
+            " O ",
+            "O  "
+        ],
+        "key": {
+            "O": {
+                "item": "minecraft:bone_meal"
+            }
+        },
+        "result": {
+            "id": "minecraft:bone"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Deflection",
+    "description": "You are immune to damage from projectiles.",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:projectile"
+    },
+    "modifier": {
+        "id": "*:*",
+        "operation": "multiply_base_multiplicative",
+        "amount": -1.0
+    }
+}

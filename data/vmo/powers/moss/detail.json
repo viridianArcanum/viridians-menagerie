@@ -1,0 +1,271 @@
+{
+    "name": "Detailing",
+    "description": "You can convert blocks into their mossy versions.",
+    "hidden": false,
+    "type": "origins:active_self",
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    },
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:cobblestone"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_cobblestone"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:cobblestone_stairs"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_cobblestone_stairs"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:cobblestone_slab"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_cobblestone_slab"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:cobblestone_wall"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_cobblestone_wall"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:stone_bricks"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_stone_bricks"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:stone_brick_stairs"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_stone_brick_stairs"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:stone_brick_slab"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_stone_brick_slab"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:stone_brick_wall"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:mossy_stone_brick_wall"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:infested_stone_bricks"
+                        }
+                    }
+                },
+                "action": [
+                    {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:infested_mossy_stone_bricks"
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

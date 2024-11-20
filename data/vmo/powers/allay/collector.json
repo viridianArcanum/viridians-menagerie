@@ -1,0 +1,10 @@
+{
+    "name": "Collector",
+    "description": "You have 5 extra inventory slots that drop upon death.",
+    "type": "origins:inventory",
+    "container_type": "hopper",
+    "drop_on_death": true,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "origins:phasing",
+    "name": "Dripleaf Familiarity",
+    "description": "You can walk freely on dripleaves as long as you aren't sneaking.",
+    "blacklist": false,
+    "render_type": "none",
+    "view_distance": 10,
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:big_dripleaf"
+    },
+    "condition": {
+        "type": "origins:sneaking",
+        "inverted": true
+    }
+}

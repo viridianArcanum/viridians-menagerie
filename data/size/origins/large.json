@@ -1,0 +1,12 @@
+{
+	"name": "Large Size",
+	"description": "You are three blocks tall.",
+	"powers": [
+		"size:looming_stature"
+	],
+	"icon": {
+		"id": "origins:orb_of_origin"
+	},
+	"order": 3,
+	"impact": 3
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Mooshroom",
+	"description": "Mooshrooms have become one with the mycelium network.",
+	"powers": [
+		"vmo:cow/mooshroom/stew",
+		"vmo:cow/mooshroom/grow",
+		"vmo:cow/mooshroom/spread",
+		"vmo:flammable",
+		"vmo:cow/mooshroom/particles_spore"
+	],
+	"icon": {
+		"id": "minecraft:red_mushroom"
+	},
+	"order": 2,
+	"impact": 1
+}

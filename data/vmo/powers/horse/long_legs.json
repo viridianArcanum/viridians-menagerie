@@ -1,0 +1,11 @@
+{
+    "name": "Long Legs",
+    "description": "You can ascend one-block inclines as if they were stairs.",
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "*:*",
+        "attribute": "minecraft:generic.step_height",
+        "operation": "add_value",
+        "amount": 0.4
+    }
+}

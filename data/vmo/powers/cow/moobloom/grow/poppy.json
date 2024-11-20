@@ -1,0 +1,38 @@
+{
+    "name": "Poppy",
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 600,
+    "entity_action": {
+        "type": "origins:chance",
+        "success_action": {
+            "type": "origins:block_action_at",
+            "block_action": {
+                "type": "origins:set_block",
+                "block": "minecraft:poppy"
+            }
+        },
+        "chance": 0.33
+    },
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "vmo:dirt"
+                },
+                {
+                    "type": "origins:offset",
+                    "condition": {
+                        "type": "origins:in_tag",
+                        "tag": "vmo:air"
+                    },
+                    "y": 1
+                    
+                }
+            ]
+        }
+    }
+}

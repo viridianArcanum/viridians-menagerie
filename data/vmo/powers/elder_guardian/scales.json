@@ -1,0 +1,66 @@
+{
+    "name": "Prismarine Scales",
+    "description": "You have strong scales that protect you when you aren't wearing armor. You have extra defense when you aren't wearing armor.",
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "id": "*:*",
+        "attribute": "minecraft:generic.armor",
+        "operation": "add_value",
+        "amount": 20
+    },
+    "condition": {
+        "type": "origins:all_of",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:any_of",
+                    "conditions": [
+                        {
+                            "type": "origins:empty"
+                        },
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:carved_pumpkin"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "chest",
+                "item_condition": {
+                    "type": "origins:any_of",
+                    "conditions": [
+                        {
+                            "type": "origins:empty"
+                        },
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:elytra"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "legs",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "feet",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        ]
+    }
+}

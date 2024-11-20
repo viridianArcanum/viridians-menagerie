@@ -1,0 +1,102 @@
+{
+    "name": "Master of Webs",
+    "description": "You are able to perfectly navigate through cobweb, and you can sense any non-arthropods stuck in cobwebs nearby. You are able to craft cobweb from string.",
+    "loading_priority": 10,
+    "type": "origins:multiple",
+    "climbing": {
+        "type": "origins:climbing",
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "origins:cobwebs"
+                    }
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:climbing_toggle"
+                }
+            ]
+        },
+        "hold_condition": {
+            "type": "origins:power_active",
+            "power": "*:*_climbing"
+        }
+    },
+    "punch_through": {
+        "type": "origins:prevent_block_selection",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:cobwebs"
+        },
+        "condition": {
+            "type": "origins:sneaking",
+            "inverted": true
+        }
+    },
+    "sense": {
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "origins:cobwebs"
+                    }
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:arthropod",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "web_crafting": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:master_of_webs/web_crafting",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
+                }
+            ],
+            "result": {
+                "id": "minecraft:cobweb"
+            }
+        }
+    },
+    "web_break_speed": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:cobwebs"
+        },
+        "condition": {
+            "type": "origins:using_effective_tool",
+            "inverted": true
+        },
+        "modifier": {
+            "id": "*:*",
+            "amount": 0.06,
+            "operation": "add_base_early"
+        }
+    },
+    "web_harvest": {
+        "type": "origins:modify_harvest",
+        "allow": true,
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:cobwebs"
+        }
+    }
+}

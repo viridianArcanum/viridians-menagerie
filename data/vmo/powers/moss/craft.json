@@ -1,0 +1,213 @@
+{
+    "name": "Mosscraft",
+    "description": "You can use mossy cobblestone as an ingredient in lieu of regular cobblestone.",
+    "hidden": false,
+    "type": "origins:multiple",
+    "sword": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_sword",
+            "pattern": [
+                " X ",
+                " X ",
+                " O "
+            ],
+            "key": {
+                "O": {
+                    "item": "minecraft:stick"
+                },
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:stone_sword"
+            }
+        }
+    },
+    "axe1": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_axe_1",
+            "pattern": [
+                "XX ",
+                "XO ",
+                " O "
+            ],
+            "key": {
+                "O": {
+                    "item": "minecraft:stick"
+                },
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:stone_axe"
+            }
+        }
+    },
+    "axe2": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_axe_2",
+            "pattern": [
+                " XX",
+                " OX",
+                " O "
+            ],
+            "key": {
+                "O": {
+                    "item": "minecraft:stick"
+                },
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:stone_axe"
+            }
+        }
+    },
+    "pickaxe": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_pickaxe",
+            "pattern": [
+                "XXX",
+                " O ",
+                " O "
+            ],
+            "key": {
+                "O": {
+                    "item": "minecraft:stick"
+                },
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:stone_pickaxe"
+            }
+        }
+    },
+    "shovel": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_shovel",
+            "pattern": [
+                " X ",
+                " O ",
+                " O "
+            ],
+            "key": {
+                "O": {
+                    "item": "minecraft:stick"
+                },
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:stone_shovel"
+            }
+        }
+    },
+    "hoe1": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_hoe_1",
+            "pattern": [
+                "XX ",
+                " O ",
+                " O "
+            ],
+            "key": {
+                "O": {
+                    "item": "minecraft:stick"
+                },
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:stone_hoe"
+            }
+        }
+    },
+    "hoe2": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_hoe_2",
+            "pattern": [
+                " XX",
+                " O ",
+                " O "
+            ],
+            "key": {
+                "O": {
+                    "item": "minecraft:stick"
+                },
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:stone_hoe"
+            }
+        }
+    },
+    "furnace": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_furnace",
+            "pattern": [
+                "XXX",
+                "X X",
+                "XXX"
+            ],
+            "key": {
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                }
+            },
+            "result": {
+                "id": "minecraft:furnace"
+            }
+        }
+    },
+    "dispenser": {
+        "type": "origins:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "origins:mossy_dispenser",
+            "pattern": [
+                "XXX",
+                "XYX",
+                "XZX"
+            ],
+            "key": {
+                "X": {
+                    "item": "minecraft:mossy_cobblestone"
+                },
+                "Y": {
+                    "item": "minecraft:bow"
+                },
+                "Z": {
+                    "item": "minecraft:redstone"
+                }
+            },
+            "result": {
+                "id": "minecraft:dispenser"
+            }
+        }
+    }
+}

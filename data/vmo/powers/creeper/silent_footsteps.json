@@ -1,0 +1,9 @@
+{
+    "name": "Natural Silence",
+    "description": "You are able to move silently.",
+    "type": "origins:prevent_game_event",
+    "events": [
+        "minecraft:step",
+        "minecraft:hit_ground"
+    ]
+}

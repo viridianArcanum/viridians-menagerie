@@ -1,0 +1,14 @@
+{
+	"name": "Lily of the Valley",
+	"description": "You grow lillies on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/poison",
+		"vmo:cow/moobloom/grow/lily_of_the_valley"
+		
+	],
+	"icon": {
+		"id": "minecraft:lily_of_the_valley"
+	},
+	"order": 11,
+	"impact": 1
+}

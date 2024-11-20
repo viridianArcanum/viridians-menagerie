@@ -1,0 +1,6 @@
+{
+    "name": "Green Thumb",
+    "description": "When you are standing on dirt or grass there is a chance that a flower matching the Floral Cowfolk variant you are will grow at your feet.",
+    "hidden": false,
+    "type": "origins:simple"
+}

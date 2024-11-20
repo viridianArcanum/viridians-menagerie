@@ -1,0 +1,104 @@
+{
+    "name": "Super Jump",
+    "description": "You can leap high into the air.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "launch": {
+        "type": "origins:launch",
+        "cooldown": 100,
+        "hud_render": {
+            "bar_index": 8
+        },
+        "sound": "minecraft:entity.frog.long_jump",
+        "speed": 1.25,
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "head",
+                    "item_condition": {
+                        "type": "origins:armor_value",
+                        "comparison": "<=",
+                        "compare_to": 2
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:armor_value",
+                        "comparison": "<=",
+                        "compare_to": 5
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:armor_value",
+                        "comparison": "<=",
+                        "compare_to": 4
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:armor_value",
+                        "comparison": "<=",
+                        "compare_to": 1
+                    }
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        }
+    },
+	"activate": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_resource",
+			"change": 1
+		},
+		"cooldown": 100,
+		"key": {
+			"key": "key.origins.primary_active"
+		}
+	},
+	"remove": {
+		"type": "origins:action_over_time",
+		"rising_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_resource",
+			"operation": "set",
+			"change": 0
+		},
+		"condition": {
+			"type": "origins:on_block"
+		}
+	},
+	"fall_damage": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:type",
+			"damage_type": "minecraft:fall"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_resource",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+    "description": "You have 2 fewer hearts of health than a human.",
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "*:*",
+        "attribute": "minecraft:generic.max_health",
+        "operation": "add_value",
+        "amount": -4
+    },
+    "loading_priority": 10
+}

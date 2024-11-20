@@ -1,0 +1,17 @@
+{
+	"name": "Fox",
+	"description": "Agile and cunning, foxes can be incredibly evasive.",
+	"powers": [
+		"vmo:fox/mouth",
+		"vmo:fox/pounce",
+		"vmo:fox/silent",
+		"vmo:adrenaline",
+		"vmo:fox/berries",
+		"vmo:fox/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:sweet_berries"
+	},
+	"order": 0,
+	"impact": 1
+}

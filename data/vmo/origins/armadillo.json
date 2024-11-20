@@ -1,0 +1,15 @@
+{
+	"name": "Armadillo",
+	"description": "Armadillos are naturally defensive creatures, sporting sturdy built-in armor.",
+	"powers": [
+		"vmo:armadillo/natural_armor",
+		"vmo:armadillo/ball",
+		"vmo:armadillo/shed",
+		"vmo:arachnid/neutral"
+	],
+	"icon": {
+		"id": "minecraft:armadillo_scute"
+	},
+	"order": 0,
+	"impact": 1
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Neutral Creepers",
+    "hidden": true,
+    "type": "extraorigins:mob_neutrality",
+    "entity_types": [
+        "minecraft:creeper"
+    ]
+}

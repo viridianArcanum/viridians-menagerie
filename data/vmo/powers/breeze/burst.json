@@ -1,0 +1,11 @@
+{
+    "name": "Wind Burst",
+    "description": "You have the Wind Burst enchantment innately.",
+    "type": "origins:modify_enchantment_level",
+    "enchantment": "minecraft:wind_burst",
+    "modifier": {
+        "id": "*:*",
+        "operation": "add_base_early",
+        "amount": 1
+    }
+}

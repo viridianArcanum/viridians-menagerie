@@ -1,0 +1,21 @@
+{
+	"name": "Ender Dragon",
+	"description": "The strongest denizens of the end, a fully-realized Ender Dragon is a force unto itself.",
+	"powers": [
+		"vmo:ender_dragon/constitution",
+		"vmo:ender_dragon/scales",
+		"vmo:flight",
+		"vmo:ender_dragon/strength",
+		"vmo:ender_dragon/breath",
+		"vmo:ender_dragon/bottle",
+		"vmo:ender_dragon/crystal",
+		"origins:ender_particles",
+		"vmo:ender_dragon/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:dragon_egg"
+	},
+	"order": 0,
+	"impact": 3,
+	"unchoosable": true
+}

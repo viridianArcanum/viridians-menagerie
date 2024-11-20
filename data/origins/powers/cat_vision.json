@@ -1,0 +1,57 @@
+{
+    "name": "Enhanced Vision",
+    "description": "You can see in the dark slightly better than a human, and you are able to see entities that would otherwise be invisible.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "sense": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:invisible"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:power_active",
+                        "power": "*:*_toggle"
+                    }
+                },
+                {
+                    "type": "origins:distance",
+                    "comparison": "<=",
+                    "compare_to": 30
+                }
+            ]
+        }
+    },
+    "dark": {
+        "type": "origins:toggle_night_vision",
+        "strength": 0.4,
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        }
+    },
+    "loading_priority": 10
+}

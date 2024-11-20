@@ -1,0 +1,78 @@
+{
+    "name": "Slimey Diet",
+    "description": "You can eat slime and magma cream. When you eat magma cream you produce a froglight.",
+    "type": "origins:multiple",
+    "eat_slime": {
+        "type": "origins:edible_item",
+        "food_component": {
+            "nutrition": 5,
+            "saturation": 0.6
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:slime_ball"
+            }
+        }
+    },
+    "eat_cream": {
+        "type": "origins:edible_item",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "vmo:frog/cold",
+                        "layer": "vmo:frog"
+                    },
+                    "action": {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:verdant_froglight",
+                            "amount": 1
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "vmo:frog/temperate",
+                        "layer": "vmo:frog"
+                    },
+                    "action": {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:ochre_froglight",
+                            "amount": 1
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:origin",
+                        "origin": "vmo:frog/warm",
+                        "layer": "vmo:frog"
+                    },
+                    "action": {
+                        "type": "origins:give",
+                        "stack": {
+                            "id": "minecraft:pearlescent_froglight",
+                            "amount": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "food_component": {
+            "nutrition": 5,
+            "saturation": 0.6
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:magma_cream"
+            }
+        }
+    }
+}

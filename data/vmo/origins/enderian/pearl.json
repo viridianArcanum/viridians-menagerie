@@ -1,0 +1,13 @@
+{
+    "name": "Ender Pearl",
+    "description": "You teleport by creating and throwing ender pearls.",
+    "powers": [
+        "origins:throw_ender_pearl"
+    ],
+    "icon": { 
+        "id": "minecraft:ender_pearl"
+    },
+    "order": 0,
+    "impact": 3,
+    "loading_priority": 9
+}

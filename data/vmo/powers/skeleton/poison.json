@@ -1,0 +1,45 @@
+{
+    "name": "Poison Tipped Arrows",
+    "description": "You can convert arrows to poison tipped arrows.",
+    "type": "origins:active_self",
+    "entity_action": [
+        {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "mainhand",
+            "action": {
+                "type": "origins:consume",
+                "amount": 1
+            }
+        },
+        {
+            "type": "origins:give",
+            "stack": {
+                "id": "minecraft:tipped_arrow",
+                "amount": 1,
+                "components": {
+                    "potion_contents": {
+                        "custom_effects": [
+                            {
+                                "id": "poison",
+                                "duration": 700
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:arrow"
+            }
+        }
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

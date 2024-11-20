@@ -1,0 +1,21 @@
+{
+	"name": "Moss Construct",
+	"description": "Born from moss as their name suggests, these constructs are incredibly in tune with nature and are very skilled at manipulating their mossy forms.",
+	"powers": [
+		"vmo:moss/photosynthesis",
+		"vmo:moss/mend",
+		"vmo:moss/spread",
+		"vmo:moss/craft",
+		"vmo:moss/detail",
+		"vmo:moss/hardy",
+		"vmo:moss/phase",
+		"vmo:moss/eat",
+		"vmo:moss/dry",
+		"vmo:moss/particles_spore"
+	],
+	"icon": {
+		"id": "minecraft:moss_block"
+	},
+	"order": 0,
+	"impact": 2
+}

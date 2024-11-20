@@ -1,0 +1,14 @@
+{
+	"name": "Blue Orchid",
+	"description": "You grow blue orchids on your back.",
+	"powers": [
+		"vmo:cow/moobloom/stew/saturation",
+		"vmo:cow/moobloom/grow/blue_orchid"
+		
+	],
+	"icon": {
+		"id": "minecraft:blue_orchid"
+	},
+	"order": 2,
+	"impact": 1
+}

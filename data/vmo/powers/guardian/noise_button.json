@@ -1,0 +1,27 @@
+{
+    "name": "Rattle Button",
+    "hidden": true,
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "if_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.guardian.ambient"
+        },
+        "else_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.guardian.ambient_land"
+        }
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.pickItem"
+    }
+}

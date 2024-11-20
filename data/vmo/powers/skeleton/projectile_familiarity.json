@@ -1,0 +1,43 @@
+{
+    "name": "Projectile Familiarity",
+    "description": "You do extra damage and have extra speed when wielding a bow.",
+    "type": "origins:multiple",
+    "speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "id": "*:*",
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "add_multiplied_base",
+            "amount": 0.2
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bow"
+                }
+            }
+        }
+    },
+    "damage": {
+        "type": "origins:modify_damage_dealt",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bow"
+                }
+            }
+        },
+        "modifier": {
+            "id": "*:*",
+            "operation": "add_base_early",
+            "amount": 2
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"name": "Moobloom",
+	"description": "Mooblooms straddle the border of flora and fauna. Nature flourishes wherever they go.",
+	"powers": [
+		"vmo:pollinate",
+		"vmo:cow/moobloom/stew",
+		"vmo:cow/moobloom/grow",
+		"vmo:flammable",
+		"vmo:cow/moobloom/variants",
+		"vmo:cow/moobloom/particles_pollen"
+		
+	],
+	"icon": {
+		"id": "minecraft:dandelion"
+	},
+	"order": 1,
+	"impact": 1
+}

@@ -1,0 +1,106 @@
+{
+    "name": "Dehydration",
+    "description": "You must regularly hydrate yourself. You gain the weakness effect if you dry yourself out.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 12000,
+        "start_value": 12000,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 2
+        },
+        "min_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_switch",
+            "operation": "set",
+            "change": 0
+        }
+    },
+    "switch": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "timer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_nether"
+            },
+            "if_action": {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">=",
+                    "compare_to": 0.01
+                },
+                "if_action": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "change": 1
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_switch",
+                        "change": 1
+                    }
+                ],
+                "else_action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "change": -2
+                }
+            },
+            "else_action": {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">=",
+                    "compare_to": 0.01
+                },
+                "if_action": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "change": 1
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_switch",
+                        "change": 1
+                    }
+                ],
+                "else_action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "change": -1
+                }
+            }
+        }
+    },
+    "weakness": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "id": "*:*",
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "add_value",
+            "amount": -4
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_switch",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    }
+}
