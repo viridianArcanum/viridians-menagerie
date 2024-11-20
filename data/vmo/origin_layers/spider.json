@@ -1,20 +1,20 @@
 {
-    "name": "arachnid variant",
+    "name": "aranea variant",
     "gui_title": {
-        "choose_origin": "Choose an arachnid variant.",
-        "view_origin": "This is your chosen arachnid variant."
+        "choose_origin": "Choose an aranea variant.",
+        "view_origin": "This is your chosen aranea variant."
     },
     "order": 1,
     "origins": [
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "origins:arachnid",
+                "origin": "vmo:spider",
                 "layer": "origins:origin"
             },
             "origins": [
-                "vmo:arachnid/common",
-                "vmo:arachnid/cave"
+                "vmo:spider/common",
+                "vmo:spider/cave"
             ]
         }
     ],

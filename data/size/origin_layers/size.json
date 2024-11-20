@@ -21,8 +21,8 @@
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "vmo:arachnid/common",
-                "layer": "vmo:arachnid"
+                "origin": "vmo:spider/common",
+                "layer": "vmo:spider"
             },
             "origins": [
                 "size:standard"
@@ -31,8 +31,8 @@
         {
             "condition": {
                 "type": "origins:origin",
-                "origin": "vmo:arachnid/cave",
-                "layer": "vmo:arachnid"
+                "origin": "vmo:spider/cave",
+                "layer": "vmo:spider"
             },
             "origins": [
                 "size:standard",

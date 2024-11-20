@@ -1,0 +1,14 @@
+{
+    "name": "Common Aranea",
+    "description": "Common aranea are, as their name suggests, commonly found both above and below ground.",
+    "powers": [
+        "origins:fragile",
+        "vmo:spider/web_defense"
+    ],
+    "icon": {
+        "id": "minecraft:cobweb"
+    },
+    "order": 0,
+    "impact": 1,
+    "loading_priority": 10
+}

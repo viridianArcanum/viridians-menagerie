@@ -1,0 +1,15 @@
+{
+    "name": "Cave Aranea",
+    "description": "Cave aranea are found in caves deep underground.",
+    "powers": [
+        "vmo:spider/frail",
+        "vmo:spider/venom_glands",
+        "vmo:spider/poison_immunity"
+    ],
+    "icon": {
+        "id": "minecraft:cobweb"
+    },
+    "order": 0,
+    "impact": 1,
+    "loading_priority": 10
+}
