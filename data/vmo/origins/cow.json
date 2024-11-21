@@ -1,6 +1,6 @@
 {
-	"name": "Cow",
-	"description": "Cows have adapted to a wide variety of natural environments, and they are tougher than they appear.",
+	"name": "Cowfolk",
+	"description": "(Cow/Moobloom/Mooshroom)\n\nCowfolk have adapted to a wide variety of natural environments, and they are tougher than they appear.",
 	"powers": [
 		"vmo:cow/cowhide",
 		"vmo:adrenaline",

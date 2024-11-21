@@ -1,6 +1,6 @@
 {
 	"name": "Pounce",
-	"description": "You can launch yourself several blocks upwards.",
+	"description": "You can launch yourself several blocks upwards. If you deal damage before touching the ground, that damage is boosted.",
 	"type": "origins:multiple",
 	"resource": {
 		"type": "origins:resource",

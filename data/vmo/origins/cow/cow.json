@@ -1,6 +1,6 @@
 {
-	"name": "Cow",
-	"description": "Cows have adapted to protect themselves from many sorts of dangers.",
+	"name": "Plains Cowfolk",
+	"description": "Plains cowfolk have adapted to protect themselves from many sorts of dangers.",
 	"powers": [
 		"vmo:cow/cow/milk",
 		"vmo:cow/cow/long",

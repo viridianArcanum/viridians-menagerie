@@ -1,9 +1,9 @@
 {
     "name": "Pack Horse",
-    "description": "You have extra carrying capacity.",
+    "description": "You have 9 extra slots of inventory.",
     "type": "origins:inventory",
     "title": "Pack Horse Inventory",
-    "container_type": "chest",
+    "container_type": "dropper",
     "drop_on_death": true,
     "key": {
         "key": "key.origins.secondary_active"

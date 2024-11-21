@@ -1,0 +1,8 @@
+{
+    "name": "Tentacles",
+    "description": "You have 9 extra slots of inventory.",
+    "type": "origins:inventory",
+    "title": "Mouth",
+    "container_type": "dropper",
+    "drop_on_death": true
+}

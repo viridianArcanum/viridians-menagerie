@@ -1,13 +1,13 @@
 {
-	"name": "Frog",
-	"description": "Froglings are excellent at navigating both underwater and on land.",
+	"name": "Frogling",
+	"description": "(Frog)\n\nFroglings are excellent at navigating both underwater and on land.",
 	"powers": [
 		"vmo:amphibious",
+		"vmo:aquatic_adaptations",
 		"vmo:frog/legs",
 		"vmo:frog/jump",
 		"vmo:frog/slime",
 		"vmo:frog/dripleaf",
-		"vmo:aquatic_adaptations",
         "vmo:frog/armor",
         "vmo:frog/variants",
 		"vmo:frog/noise_button"

@@ -1,10 +1,10 @@
 {
-	"name": "Creeper",
-	"description": "A Creeper's explosions can either be an amazing tool or an enormous danger.",
+	"name": "Verdankin",
+	"description": "(Creeper)\n\nA verdankin's explosions can either be an amazing tool or an enormous danger.",
 	"powers": [
 		"vmo:creeper/explosion",
 		"vmo:creeper/immune_explosion",
-		"vmo:creeper/silent_footsteps",
+		"vmo:natural_silence",
 		"vmo:flammable",
 		"vmo:creeper/fear_of_cats",
 		"vmo:creeper/neutral",

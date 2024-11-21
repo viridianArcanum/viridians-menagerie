@@ -1,7 +1,6 @@
 {
     "name": "Mosscraft",
     "description": "You can use mossy cobblestone as an ingredient in lieu of regular cobblestone.",
-    "hidden": false,
     "type": "origins:multiple",
     "sword": {
         "type": "origins:recipe",

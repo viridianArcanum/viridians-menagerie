@@ -6,7 +6,8 @@
 		"origins:like_air",
 		"origins:tailwind",
 		"origins:lay_eggs",
-		"origins:vegetarian"
+		"origins:vegetarian",
+		"vmo:chicken/noise_button"
 	],
 	"icon": {
 		"id": "minecraft:feather"

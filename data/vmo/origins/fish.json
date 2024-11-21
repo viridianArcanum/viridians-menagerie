@@ -1,13 +1,10 @@
 {
 	"name": "Merling",
-    "description": "These natural inhabitants of the ocean are not used to being out of the water for too long.",
+    "description": "(Fish/Dolphin)\n\nThese natural inhabitants of the ocean are not used to being out of the water for too long.",
     "powers": [
 		"origins:water_breathing",
-		"origins:swim_speed",
+		"vmo:aquatic_adaptations",
 		"vmo:fish/dolphins_grace",
-		"origins:water_vision",
-		"origins:aqua_affinity",
-		"origins:like_water",
 		"vmo:fish/impaling",
 		"vmo:fish/diet",
 		"origins:aquatic",

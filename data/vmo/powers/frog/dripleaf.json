@@ -1,7 +1,7 @@
 {
-    "type": "origins:phasing",
     "name": "Dripleaf Familiarity",
     "description": "You can walk freely on dripleaves as long as you aren't sneaking.",
+    "type": "origins:phasing",
     "blacklist": false,
     "render_type": "none",
     "view_distance": 10,

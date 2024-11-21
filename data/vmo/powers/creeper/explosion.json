@@ -1,6 +1,6 @@
 {
     "name": "Explosion",
-    "description": "You can release a small explosion that damages entities but not blocks.",
+    "description": "You can release a small explosion that damages both entities and blocks.",
     "type": "origins:multiple",
     "intentional": {
         "type": "origins:active_self",
@@ -15,7 +15,7 @@
                 "action": {
                     "type": "origins:explode",
                     "power": 3,
-                    "destruction_type": "keep",
+                    "destruction_type": "break",
                     "damage_self": false,
                     "create_fire": false
                 }

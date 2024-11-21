@@ -1,6 +1,6 @@
 {
     "name": "Photosynthesis",
-    "description": "You regain stamina passively while in direct sunlight.",
+    "description": "You regain health passively while in direct sunlight.",
     "type": "origins:action_over_time",
     "interval": 20,
     "entity_action": {

@@ -1,16 +1,18 @@
 {
-	"name": "Elder Guardian",
-	"description": "Elder Guardians are more mature and more powerful than their younger counterparts.",
+	"name": "Elder Sentinel",
+	"description": "(Elder Guardian)\n\nElder sentinels are more mature and more powerful than their younger counterparts.",
 	"powers": [
 		"vmo:bimodal_respiration",
+		"vmo:aquatic_adaptations",
 		"vmo:elder_guardian/constitution",
 		"vmo:elder_guardian/scales",
 		"vmo:guardian/spikes",
 		"vmo:elder_guardian/laser",
 		"vmo:elder_guardian/curse",
-		"vmo:aquatic_adaptations",
 		"vmo:piscivore",
 		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
 		"vmo:guardian/neutral",
 		"vmo:elder_guardian/noise_button"
 	],

@@ -1,6 +1,6 @@
 {
 	"name": "Moss Construct",
-	"description": "Born from moss as their name suggests, these constructs are incredibly in tune with nature and are very skilled at manipulating their mossy forms.",
+	"description": "(Moss)\n\nBorn from moss as their name suggests, these constructs are incredibly in tune with nature and are very skilled at manipulating their mossy forms.",
 	"powers": [
 		"vmo:moss/photosynthesis",
 		"vmo:moss/mend",

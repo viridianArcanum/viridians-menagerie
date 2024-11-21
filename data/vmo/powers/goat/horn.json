@@ -21,7 +21,7 @@
                     },
                     "action": {
                         "type": "origins:chance",
-                        "action": [
+                        "success_action": [
                             {
                                 "type": "origins:change_resource",
                                 "resource": "*:*_resource",

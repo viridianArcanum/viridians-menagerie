@@ -1,6 +1,6 @@
 {
-	"name": "Goat",
-	"description": "Often thought to be jovial partygoers, goats are deceptively agile and strong.",
+	"name": "Satyr",
+	"description": "(Goat)\n\nOften thought to be jovial partygoers, satyrs are deceptively agile and strong.",
 	"powers": [
 		"vmo:goat/ram",
 		"vmo:goat/leap",

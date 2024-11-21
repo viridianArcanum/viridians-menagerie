@@ -32,6 +32,9 @@
                 "type": "origins:execute_command",
                 "command": "particle minecraft:glow_squid_ink ~ ~1 ~ .5 .5 .5 0 30 force"
             }
-        ]
+        ],
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
     }
 }

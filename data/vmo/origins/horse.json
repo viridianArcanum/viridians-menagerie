@@ -1,6 +1,6 @@
 {
 	"name": "Centaur",
-	"description": "Centaurs embody the best qualities of both humans and horses. They are remarkably smart, fast, and strong.",
+	"description": "(Horse/Donkey/Mule)\n\nCentaurs embody the best qualities of both humans and horses. They are remarkably smart, fast, and strong.",
 	"powers": [
 		"vmo:horse/gallop",
 		"vmo:horse/pack_horse",

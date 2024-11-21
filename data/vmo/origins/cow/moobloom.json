@@ -1,6 +1,6 @@
 {
-	"name": "Moobloom",
-	"description": "Mooblooms straddle the border of flora and fauna. Nature flourishes wherever they go.",
+	"name": "Floral Cowfolk",
+	"description": "Floral cowfolk straddle the border of flora and fauna. Nature flourishes wherever they go.",
 	"powers": [
 		"vmo:pollinate",
 		"vmo:cow/moobloom/stew",

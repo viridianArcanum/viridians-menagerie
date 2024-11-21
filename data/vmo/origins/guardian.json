@@ -1,14 +1,16 @@
 {
-	"name": "Guardian",
-	"description": "Guardians are fierce and powerful protectors of ocean monuments.",
+	"name": "Sentinel",
+	"description": "(Guardian)\n\nMerlings with guardian influence, sentinels are fierce and powerful protectors of ocean monuments.",
 	"powers": [
 		"vmo:bimodal_respiration",
+		"vmo:aquatic_adaptations",
 		"vmo:guardian/scales",
 		"vmo:guardian/spikes",
 		"vmo:guardian/laser",
-		"vmo:aquatic_adaptations",
 		"vmo:piscivore",
 		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
 		"vmo:guardian/noise_button"
 	],
 	"icon": {

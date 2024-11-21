@@ -1,6 +1,6 @@
 {
 	"name": "Phantom",
-    "description": "(Phantom)\n\nPhantoms can fly gracefully, but they are sensitive to sunlight.",
+    "description": "Phantoms can fly gracefully, but they are sensitive to sunlight.",
     "powers": [
 		"vmo:flight",
         "origins:aerial_combatant",

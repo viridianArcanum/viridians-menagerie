@@ -1,6 +1,6 @@
 {
-	"name": "Ghast",
-	"description": "Ghasts are able to gently float to navigate the Nether.",
+	"name": "Ghastly",
+	"description": "(Ghast)\n\nGhastlies are able to gently float to navigate the Nether.",
 	"powers": [
 		"vmo:ghast/fireball",
 		"vmo:ghast/hover",

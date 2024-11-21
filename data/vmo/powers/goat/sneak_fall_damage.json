@@ -1,5 +1,5 @@
 {
-    "name": "Strong Ankles",
+    "name": "Brace For Impact",
     "description": "You can negate fall damage by sneaking.",
     "type": "origins:invulnerability",
     "damage_condition": {

@@ -1,6 +1,6 @@
 {
-	"name": "Allay",
-	"description": "Sprite-like beings of air and light, allay are incredibly skilled at locating and collecting items, and are very in-touch with music.",
+	"name": "Alleve",
+	"description": "(Allay)\n\nSprite-like beings of air and light, allay are incredibly skilled at locating and collecting items, and are very in-touch with music.",
 	"powers": [
 		"vmo:allay/hover",
 		"origins:slow_falling",

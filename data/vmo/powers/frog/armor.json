@@ -1,5 +1,5 @@
 {
     "name": "Light Armor",
-    "description": "You jump isn't boosted if you wear armor with a protection value higher than chainmail.",
+    "description": "You will no longer have a boosted jump if you wear armor with a protection value higher than chainmail",
     "type": "origins:simple"
 }

@@ -1,5 +1,6 @@
 {
     "name": "Strong Legs",
+    "description": "Your legs are stronger than other creatures, allowing you to run faster and jump higher. You take less damage from falling.",
     "type": "origins:multiple",
     "speed": {
         "type": "origins:attribute",
@@ -61,7 +62,7 @@
             ]
         }
     },
-    "immune": {
+    "fall": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
             "type": "origins:type",

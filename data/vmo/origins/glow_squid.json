@@ -1,12 +1,16 @@
 {
-	"name": "Glow Squid",
-	"description": "Glow squid drift peacefully out at sea, dotting the sea floor like stars dot the sky.",
+	"name": "Glow Cecaelia",
+	"description": "(Glow Squid)\n\nGlow cecaelia drift peacefully out at sea, dotting the sea floor like stars dot the sky.",
 	"powers": [
 		"origins:water_breathing",
-		"vmo:glow_squid/ink",
 		"vmo:aquatic_adaptations",
+		"vmo:squid/tentacles",
+		"vmo:glow_squid/ink",
 		"origins:carnivore",
 		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
+		"vmo:fish/turtle_helmet_breathing",
 		"vmo:glow_squid/noise_button"
 	],
 	"icon": {

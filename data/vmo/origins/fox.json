@@ -1,10 +1,10 @@
 {
-	"name": "Fox",
-	"description": "Agile and cunning, foxes can be incredibly evasive.",
+	"name": "Foxfolk",
+	"description": "(Fox)\n\nAgile and cunning, foxfolk always know the right time to pounce.",
 	"powers": [
 		"vmo:fox/mouth",
 		"vmo:fox/pounce",
-		"vmo:fox/silent",
+		"vmo:natural_silence",
 		"vmo:adrenaline",
 		"vmo:fox/berries",
 		"vmo:fox/noise_button"

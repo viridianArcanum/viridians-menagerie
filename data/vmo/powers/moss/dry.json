@@ -1,6 +1,6 @@
 {
     "name": "Dehydration",
-    "description": "You must regularly hydrate yourself. You gain the weakness effect if you dry yourself out.",
+    "description": "You must regularly hydrate yourself. You gain the weakness effect if you dry out completely.",
     "type": "origins:multiple",
     "resource": {
         "type": "origins:resource",

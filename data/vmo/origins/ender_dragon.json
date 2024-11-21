@@ -1,10 +1,10 @@
 {
-	"name": "Ender Dragon",
-	"description": "The strongest denizens of the end, a fully-realized Ender Dragon is a force unto itself.",
+	"name": "Dragonborn",
+	"description": "(Ender Dragon)\n\nThe strongest denizens of the end, a fully-realized dragonborn is a force unto itself.",
 	"powers": [
 		"vmo:ender_dragon/constitution",
 		"vmo:ender_dragon/scales",
-		"vmo:flight",
+		"vmo:ender_dragon/flight",
 		"vmo:ender_dragon/strength",
 		"vmo:ender_dragon/breath",
 		"vmo:ender_dragon/bottle",
