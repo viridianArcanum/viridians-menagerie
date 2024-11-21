@@ -1,12 +1,13 @@
 {
-	"name": "Camel",
-	"description": "Camels are hardy creatures adapted to life in the desert.",
+	"name": "Dromedarian",
+	"description": "(Camel)\n\nDromedarians are hardy creatures adapted to life in the desert.",
 	"powers": [
 		"vmo:camel/hardy",
 		"vmo:rideable_creature",
 		"vmo:camel/dash",
 		"vmo:camel/long_legs",
-		"vmo:small_appetite"
+		"vmo:small_appetite",
+		"vmo:camel/noise_button"
 	],
 	"icon": {
 		"id": "minecraft:cactus"

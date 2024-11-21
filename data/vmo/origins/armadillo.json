@@ -1,11 +1,11 @@
 {
-	"name": "Armadillo",
-	"description": "Armadillos are naturally defensive creatures, sporting sturdy built-in armor.",
+	"name": "Dasypus",
+	"description": "(Armadillo)\n\nDasypi are naturally defensive creatures, sporting sturdy built-in armor.",
 	"powers": [
 		"vmo:armadillo/natural_armor",
 		"vmo:armadillo/ball",
 		"vmo:armadillo/shed",
-		"vmo:arachnid/neutral"
+		"vmo:spider/neutral"
 	],
 	"icon": {
 		"id": "minecraft:armadillo_scute"

@@ -1,6 +1,6 @@
 {
     "name": "Catfolk",
-    "description": "(Cat/Ocelot)\n\nSharing many features with their namesake, Catfolk are as nimble as they are strong. They are able to sneak up on their prey and take them down with ease.",
+    "description": "(Cat/Ocelot)\n\nSharing many features with their namesake, catfolk are as nimble as they are strong. They are able to sneak up on their prey and take them down with ease.",
     "powers": [
         "origins:fall_immunity",
         "vmo:cat/zoomies",
