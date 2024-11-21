@@ -1,12 +1,12 @@
 {
-	"name": "Bat",
-	"description": "Bats have adapted to efficiently navigate the large cave systems they call home.",
+	"name": "Leatherwing",
+	"description": "(Bat)\n\nLeatherwings have adapted to efficiently navigate the large cave systems they call home.",
 	"powers": [
 		"vmo:flight",
 		"vmo:night_vision",
 		"vmo:bat/sonar",
 		"origins:aerial_combatant",
-		"origins:light_armor",
+		"vmo:bat/armor",
 		"vmo:bat/noise_button"
 	],
 	"icon": {

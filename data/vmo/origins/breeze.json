@@ -1,6 +1,6 @@
 {
-	"name": "Breeze",
-	"description": "The wind itself come to life, breezes .",
+	"name": "Anemoi",
+	"description": "(Breeze)\n\nThe wind itself come to life, anemoi are well suited for traveling great distances in very little time.",
 	"powers": [
 		"vmo:breeze/fall",
 		"vmo:breeze/jump",
@@ -8,6 +8,7 @@
 		"vmo:breeze/burst",
 		"vmo:breeze/deflect",
 		"vmo:breeze/immune",
+		"vmo:breeze/armor",
 		"vmo:breeze/neutral"
 	],
 	"icon": {

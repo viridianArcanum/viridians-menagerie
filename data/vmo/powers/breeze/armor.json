@@ -1,0 +1,5 @@
+{
+    "name": "Light Armor",
+    "description": "Your jump strength is reduced and you cannot fire wind charges if you are wearing armor with a protection value higher than chainmail.",
+    "type": "origins:simple"
+}
