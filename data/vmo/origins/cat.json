@@ -10,6 +10,7 @@
         "origins:nine_lives",
         "origins:carnivore",
         "vmo:cat/hunger_pangs",
+        "vmo:cat/noise_button",
         "vmo:phantom/neutral"
     ],
     "icon": {

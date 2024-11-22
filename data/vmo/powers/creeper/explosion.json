@@ -15,7 +15,7 @@
                 "action": {
                     "type": "origins:explode",
                     "power": 3,
-                    "destruction_type": "break",
+                    "destruction_type": "destroy",
                     "damage_self": false,
                     "create_fire": false
                 }

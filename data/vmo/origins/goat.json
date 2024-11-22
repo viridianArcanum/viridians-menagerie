@@ -10,7 +10,9 @@
 		"origins:vegetarian",
 		"vmo:goat/noise_button"
 	],
-	"icon": "minecraft:goat_horn",
+	"icon": {
+		"id": "minecraft:goat_horn"
+	},
 	"order": 0,
 	"impact": 1
 }

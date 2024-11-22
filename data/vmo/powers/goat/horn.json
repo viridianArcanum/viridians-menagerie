@@ -136,7 +136,7 @@
                     },
                     "action": {
                         "type": "origins:chance",
-                        "action": [
+                        "success_action": [
                             {
                                 "type": "origins:change_resource",
                                 "resource": "*:*_resource",
@@ -251,7 +251,7 @@
                     },
                     "action": {
                         "type": "origins:chance",
-                        "action": [
+                        "success_action": [
                             {
                                 "type": "origins:change_resource",
                                 "resource": "*:*_resource",
@@ -366,7 +366,7 @@
                     },
                     "action": {
                         "type": "origins:chance",
-                        "action": [
+                        "success_action": [
                             {
                                 "type": "origins:change_resource",
                                 "resource": "*:*_resource",
@@ -476,7 +476,7 @@
             ]
         },
         "damage_condition": {
-            "type": "origins:or",
+            "type": "origins:any_of",
             "conditions": [
                 {
                     "type": "origins:type",

@@ -5,8 +5,8 @@
 		"vmo:skeleton/no_organs",
 		"vmo:skeleton/craft_bones",
 		"vmo:skeleton/remove_ribs",
-		"vmo:undead",
 		"vmo:burn_in_sunlight",
+		"vmo:undead",
 		"vmo:skeleton/neutral",
 		"vmo:skeleton/noise_button"
 	],
