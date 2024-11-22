@@ -1,0 +1,22 @@
+{
+    "name": "Shed",
+    "description": "You can shed a phantom membrane periodically.",
+    "type": "origins:active_self",
+    "entity_action": [
+        {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.phantom.flap"
+        },
+        {
+            "type": "origins:give",
+            "stack": {
+                "id": "minecraft:phantom_membrane"
+            }
+        }
+    ],
+    "cooldown": 6000,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 5
+    }
+}

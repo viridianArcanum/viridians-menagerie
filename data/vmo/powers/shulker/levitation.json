@@ -1,0 +1,52 @@
+{
+    "name": "Levitating Strikes",
+    "description": "Your melee attacks inflict the levitation effect.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 300,
+        "start_value": 300,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 300
+            }
+        }
+    },
+    "timer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        }
+    },
+    "activate": {
+        "type": "origins:modify_damage_dealt",
+        "self_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "operation": "set",
+            "change": 0
+        },
+        "target_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "id": "minecraft:levitation",
+                "duration": 200
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 300
+        }
+    }
+}

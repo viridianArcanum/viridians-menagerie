@@ -1,0 +1,60 @@
+{
+    "name": "Reflex Teleport",
+    "description": "If you take damage that would otherwise kill you, you instead automatically teleport to a random safe location on the surface. This ability runs on a cooldown.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 6000,
+        "start_value": 6000,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 7,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 6000
+            }
+        }
+    },
+    "timer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        }
+    },
+    "prevent_death": {
+        "type": "origins:prevent_death",
+        "entity_action": [
+            {
+                "type": "origins:change_resource",
+                "resource": "*:*_resource",
+                "operation": "set",
+                "change": 0
+            },
+            {
+                "type": "origins:random_teleport",
+                "heightmap": "world_surface",
+                "success_action": {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.enderman.teleport"
+                },
+                "fail_action": {
+                    "type": "origins:execute_command",
+                    "command": "tellraw @s {\"text\":\"Teleport failed!\",\"color\":\"red\"}"
+                }
+            }
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 6000
+        }
+    }
+}

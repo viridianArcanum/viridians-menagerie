@@ -1,0 +1,8 @@
+{
+	"type": "origins:modify_exhaustion",
+	"modifier": {
+		"amount": 0.4,
+		"operation": "multiply_base_multiplicative"
+	},
+    "loading_priority": 10
+}

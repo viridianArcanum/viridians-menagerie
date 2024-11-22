@@ -5,9 +5,14 @@
 		"vmo:flight",
         "origins:aerial_combatant",
         "vmo:phantom/shed",
-        "vmo:darkvision",
+        "vmo:night_vision",
+		"vmo:phantom/no_sleep",
+		"vmo:phantom/armor",
         "vmo:creeper/fear_of_cats",
-		"origins:burn_in_daylight"
+		"vmo:burn_in_sunlight",
+		"vmo:undead",
+		"vmo:phantom/neutral",
+		"vmo:phantom/noise_button"
 	],
 	"icon": {
 		"id": "minecraft:phantom_membrane"

@@ -1,0 +1,10 @@
+{
+    "name": "Insomnia",
+    "description": "You don't need to sleep, and phantoms don't haunt you.",
+    "type": "origins:modify_insomnia_ticks",
+    "modifier": {
+        "id": "*:*",
+        "operation": "set_total",
+        "amount": 0
+    }
+}

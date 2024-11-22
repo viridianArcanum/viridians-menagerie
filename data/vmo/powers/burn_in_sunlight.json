@@ -1,6 +1,6 @@
 {
     "name": "Burn in Sunlight",
-    "hidden": true,
+    "description": "You burn in direct sunlight.",
     "type": "origins:burn",
     "interval": 20,
     "burn_duration": 1,
