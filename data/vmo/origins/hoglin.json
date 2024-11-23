@@ -1,0 +1,18 @@
+{
+	"name": "Hogling",
+	"description": "(Hoglin)\n\nBetween their enormous strength and powerful tusks, hoglings are well-equipped to handle the dangers of the Nether.",
+	"powers": [
+		"vmo:hoglin/thick_hide",
+		"vmo:hoglin/heavy",
+		"vmo:hoglin/charge",
+		"vmo:hoglin/launch",
+		"vmo:hoglin/warped_fungus",
+		"vmo:hoglin/neutral",
+		"vmo:hoglin/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:crimson_fungus"
+	},
+	"order": 0,
+	"impact": 1
+}

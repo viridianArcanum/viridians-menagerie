@@ -1,0 +1,104 @@
+{
+	"name": "Charge",
+	"description": "With a burst of strength you can charge forward at high speeds and barrel past-- or through-- anyone in your way.",
+	"type": "origins:multiple",
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 300,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 5,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_resource",
+				"comparison": "<",
+				"compare_to": 300
+			}
+		},
+		"min_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_switch",
+			"operation": "set",
+			"change": 0
+		}
+	},
+	"switch": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"start_value": 0
+	},
+	"timer": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_switch",
+				"comparison": "==",
+				"compare_to": 0
+			},
+			"if_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_resource",
+				"change": 1
+			},
+			"else_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_resource",
+				"change": -5
+			}
+		}
+	},
+	"activate": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:add_velocity",
+					"y": 0.1,
+					"z": 2.0,
+					"space": "local"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "*:*_switch",
+					"change": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:all_of",
+			"conditions": [
+				{
+					"type": "origins:on_block"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_resource",
+					"comparison": "==",
+					"compare_to": 300
+				}
+			]
+		}
+	},
+	"strength": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"id": "*:*",
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "add_value",
+			"amount": 3
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_switch",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Heavyweight",
+    "description": "You have innate knockback resistance.",
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "*:*",
+        "attribute": "minecraft:generic.knockback_resistance",
+        "operation": "add_value",
+        "amount": 0.6
+    }
+}
