@@ -1,0 +1,89 @@
+{
+    "name": "Forge",
+    "description": "You can sneak and use an anvil to repair half of your health. The anvil has a chance to degrade with each use.",
+    "type": "origins:multiple",
+    "anvil": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:chance",
+            "success_action": {
+                "type": "origins:set_block",
+                "block": "minecraft:chipped_anvil"
+            },
+            "chance": 0.12
+        },
+        "entity_action": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.anvil.use"
+            },
+            {
+                "type": "origins:heal",
+                "amount": 20
+            }
+        ],
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:anvil"
+        },
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "chipped_anvil": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:chance",
+            "success_action": {
+                "type": "origins:set_block",
+                "block": "minecraft:damaged_anvil"
+            },
+            "chance": 0.12
+        },
+        "entity_action": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.anvil.use"
+            },
+            {
+                "type": "origins:heal",
+                "amount": 20
+            }
+        ],
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:chipped_anvil"
+        },
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "damaged_anvil": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:chance",
+            "success_action": {
+                "type": "origins:set_block",
+                "block": "minecraft:air"
+            },
+            "chance": 0.12
+        },
+        "entity_action": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.anvil.destroy"
+            },
+            {
+                "type": "origins:heal",
+                "amount": 20
+            }
+        ],
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:damaged_anvil"
+        },
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    }
+}

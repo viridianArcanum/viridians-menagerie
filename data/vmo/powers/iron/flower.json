@@ -1,0 +1,12 @@
+{
+    "name": "Gentle Giant",
+    "description": "You can create poppy flowers.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:give",
+        "stack": {
+            "id": "minecraft:poppy",
+            "amount": 1
+        }
+    }
+}

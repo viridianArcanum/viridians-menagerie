@@ -1,0 +1,20 @@
+{
+    "name": "High Density",
+    "description": "You don't need to breathe and can stay underwater indefinitely, but you are unable to float.",
+    "type": "origins:multiple",
+    "breathe": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 20
+		},
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water"
+		}
+	},
+    "sink": {
+        "type": "origins:ignore_water"
+    }
+}

@@ -1,0 +1,22 @@
+{
+	"name": "Iron Construct",
+	"description": "(Iron Golem)\n\nIron constructs are the sturdy and stalwart protectors of villages.",
+	"powers": [
+		"vmo:iron/no_organs",
+		"vmo:iron/iron",
+		"vmo:iron/repair",
+		"vmo:iron/strength",
+		"vmo:iron/fall",
+		"vmo:iron/launch",
+		"vmo:iron/friend",
+		"vmo:iron/flower",
+		"vmo:flammable",
+		"vmo:sink_in_water",
+		"origins:no_shield"
+	],
+	"icon": {
+		"id": "minecraft:iron_ingot"
+	},
+	"order": 0,
+	"impact": 3
+}

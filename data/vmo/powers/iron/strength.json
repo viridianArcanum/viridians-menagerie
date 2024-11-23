@@ -1,0 +1,11 @@
+{
+    "name": "Immense Strength",
+    "description": "You have permanent strength.",
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "*:*",
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "add_value",
+        "amount": 3
+    }
+}
