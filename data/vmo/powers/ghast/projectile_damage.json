@@ -8,6 +8,6 @@
     "modifier": {
         "id": "*:*",
         "amount": 1,
-        "operation": "multiply_base_multiplicative"
+        "operation": "multiply_base_additive"
     }
 }

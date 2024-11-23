@@ -41,7 +41,7 @@
         "type": "origins:modify_damage_taken",
         "modifier": {
             "id": "*:*",
-            "operation": "multiply_base_multiplicative",
+            "operation": "multiply_base_additive",
             "amount": -0.5
         }
     }
