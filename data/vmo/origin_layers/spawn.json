@@ -4,7 +4,7 @@
         "choose_origin": "Choose a spawn location.",
         "view_origin": "This is your chosen spawn location."
     },
-    "order": 5,
+    "order": 10,
     "origins": [
         {
             "condition": {
@@ -21,6 +21,17 @@
             "condition": {
                 "type": "origins:origin",
                 "origin": "vmo:ghast",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "vmo:spawn/nether",
+                "vmo:spawn/overworld"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "vmo:hoglin",
                 "layer": "origins:origin"
             },
             "origins": [
