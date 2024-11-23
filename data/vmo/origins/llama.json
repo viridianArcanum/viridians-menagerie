@@ -1,0 +1,17 @@
+{
+	"name": "Llamafolk",
+	"description": "(Llama)\n\nLlamafolk can grow thick coats, though the wool more closely resemble a llama's than a sheep's.",
+	"powers": [
+		"vmo:llama/wool_coat",
+		"vmo:llama/spit",
+		"vmo:llama/storage",
+		"vmo:adrenaline",
+		"origins:vegetarian",
+		"vmo:llama/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:white_carpet"
+	},
+	"order": 0,
+	"impact": 1
+}

@@ -1,0 +1,40 @@
+{
+    "name": "Wool Coat",
+    "description": "You have a thick wool coat that grants a number of benefits. You take reduced fall and blast damage. You are immune to freezing. Your footsteps are silent.",
+    "type": "origins:multiple",
+    "damage": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:any_of",
+            "conditions": [
+                {
+                    "type": "origins:type",
+                    "damage_type": "minecraft:fall"
+                },
+                {
+                    "type": "origins:type",
+                    "damage_type": "minecraft:explosion"
+                }
+            ]
+        },
+        "modifier": {
+            "id": "*:*",
+            "operation": "multiply_base_additive",
+            "amount": -0.5
+        }
+    },
+    "freeze": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type": "minecraft:freeze"
+        }
+    },
+    "silence": {
+        "type": "origins:prevent_game_event",
+        "events": [
+            "minecraft:step",
+            "minecraft:hit_ground"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Storage",
+    "description": "You have 9 additional inventory slots. These items will drop if you die.",
+    "type": "origins:inventory",
+    "title": "Storage",
+    "drop_on_death": true,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}
