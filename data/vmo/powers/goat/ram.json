@@ -9,7 +9,6 @@
 		"start_value": 0,
 		"hud_render": {
 			"should_render": true,
-			"sprite_location": "origins:textures/gui/resource_bar.png",
 			"bar_index": 5,
 			"condition": {
 				"type": "origins:resource",
@@ -45,12 +44,12 @@
 			"if_action": {
 				"type": "origins:change_resource",
 				"resource": "*:*_resource",
-				"change": -100
+				"change": 1
 			},
 			"else_action": {
 				"type": "origins:change_resource",
 				"resource": "*:*_resource",
-				"change": 1
+				"change": -5
 			}
 		}
 	},

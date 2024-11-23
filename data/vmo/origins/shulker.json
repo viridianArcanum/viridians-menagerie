@@ -1,6 +1,6 @@
 {
 	"name": "Shulk",
-    "description": "(Shulker)\n\nRelated to shulkers, the bodies of the Shulk are outfitted with a protective shell-like skin.",
+    "description": "(Shulker)\n\nRelated to shulkers, the bodies of the shulk are outfitted with a protective shell-like skin.",
     "powers": [
         "origins:shulker_inventory",
         "vmo:shulker/shell_armor",
@@ -9,6 +9,7 @@
         "origins:strong_arms",
         "origins:no_shield",
         "origins:more_exhaustion",
+		"origins:strong_arms_break_speed",
         "vmo:shulker/neutral",
         "vmo:shulker/noise_button"
     ],

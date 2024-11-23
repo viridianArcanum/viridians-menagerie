@@ -1,6 +1,6 @@
 {
 	"name": "Bogged",
-	"description": "Strays are skeletons from swampy biomes who specialize in inflicting poison.",
+	"description": "Bogged are skeletons from swampy biomes who specialize in inflicting poison.",
 	"powers": [
 		"vmo:skeleton/poison"
 	],
