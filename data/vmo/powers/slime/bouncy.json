@@ -1,0 +1,14 @@
+{
+	"name": "Bouncy",
+	"description": "You have a stronger jump.",
+	"type": "origins:modify_jump",
+	"modifier": {
+		"id": "*:*",
+		"operation": "add_base_early",
+		"amount": 0.3
+	},
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "particle minecraft:flame ~ ~ ~ 0.3 0 0.3 0.1 10 normal"
+	}
+}

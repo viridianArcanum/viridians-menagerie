@@ -1,0 +1,21 @@
+{
+	"name": "Split",
+	"description": "When you take a moderate amount of damage, there is a chance you will drop a magma cream.",
+	"type": "origins:self_action_when_hit",
+	"entity_action": {
+		"type": "origins:chance",
+		"success_action": {
+			"type": "origins:give",
+			"stack": {
+				"id": "minecraft:magma_cream",
+				"amount": 1
+			}
+		},
+		"chance": 0.33
+	},
+	"damage_condition": {
+		"type": "origins:amount",
+		"comparison": ">=",
+		"compare_to": 6
+	}
+}

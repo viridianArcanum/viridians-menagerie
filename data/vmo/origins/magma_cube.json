@@ -1,0 +1,21 @@
+{
+	"name": "Magmaborn",
+	"description": "(Magma Cube)\n\nAs their name implies, magmaborn are risen from magma and are incredibly malleable.",
+	"powers": [
+		"vmo:slime/fragmentation",
+        "origins:fire_immunity",
+        "origins:hotblooded",
+        "vmo:fire_aspect",
+        "vmo:lava_affinity",
+        "vmo:slime/bouncy",
+        "vmo:amorphous",
+        "vmo:magma_cube/magma_cream",
+		"vmo:magma_cube/neutral",
+		"origins:flame_particles"
+	],
+	"icon": {
+		"id": "minecraft:magma_block"
+	},
+	"order": 0,
+	"impact": 3
+}

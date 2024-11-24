@@ -8,7 +8,7 @@
         "origins:like_air",
         "vmo:lava_affinity",
         "vmo:blaze/fireball",
-        "vmo:blaze/fire_aspect",
+        "vmo:fire_aspect",
 		"origins:hotblooded",
         "origins:water_vulnerability",
         "origins:flame_particles",

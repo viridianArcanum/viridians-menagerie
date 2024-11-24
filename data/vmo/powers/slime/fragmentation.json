@@ -1,0 +1,158 @@
+{
+    "name": "Fragmentation",
+    "description": "Instead of dying, you split and become half your original size. You can do this twice, but after a third time you will actually die.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "start_value": 2
+    },
+    "die": {
+        "type": "origins:prevent_death",
+        "entity_action": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": "==",
+                    "compare_to": 2
+                },
+                "if_action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 1
+                },
+                "else_action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "id": "minecraft:regeneration",
+                        "amplifier": 1,
+                        "duration": 900
+                    },
+                    {
+                        "id": "minecraft:absorption",
+                        "amplifier": 1,
+                        "duration": 100
+                    }
+                ]
+            }
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "reset": {
+        "type": "origins:action_on_death",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_resource",
+                "operation": "set",
+                "change": 2
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "mid": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "id": "*:*_scale",
+                "attribute": "minecraft:generic.scale",
+                "operation": "add_value",
+                "amount": -0.5
+            },
+            {
+                "id": "*:*_attack_speed",
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "add_value",
+                "amount": 0.25
+            },
+            {
+                "id": "*:*_movement_speed",
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "add_value",
+                "amount": -0.0075
+            },
+            {
+                "id": "*:*_entity_reach",
+                "attribute": "minecraft:player.entity_interaction_range",
+                "operation": "add_value",
+                "amount": -0.125
+            },
+            {
+                "id": "*:*_block_reach",
+                "attribute": "minecraft:player.block_interaction_range",
+                "operation": "add_value",
+                "amount": -0.5
+            }
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "small": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "id": "*:*_scale_small",
+                "attribute": "minecraft:generic.scale",
+                "operation": "add_value",
+                "amount": -0.75
+            },
+            {
+                "id": "*:*_attack_speed_small",
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "add_value",
+                "amount": 0.5
+            },
+            {
+                "id": "*:*_movement_speed_small",
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "add_value",
+                "amount": -0.015
+            },
+            {
+                "id": "*:*_entity_reach_small",
+                "attribute": "minecraft:player.entity_interaction_range",
+                "operation": "add_value",
+                "amount": -0.25
+            },
+            {
+                "id": "*:*_block_reach_small",
+                "attribute": "minecraft:player.block_interaction_range",
+                "operation": "add_value",
+                "amount": -1
+            }
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    }
+}

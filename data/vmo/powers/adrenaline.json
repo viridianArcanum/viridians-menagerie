@@ -50,7 +50,7 @@
 			"else_action": {
 				"type": "origins:change_resource",
 				"resource": "*:*_resource",
-				"change": -120
+				"change": -10
 			}
 		}
 	},
@@ -65,6 +65,21 @@
 			"type": "origins:amount",
 			"comparison": ">=",
 			"compare_to": 4
+		}
+	},
+	"speed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"id": "*:*",
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "add_multiplied_base",
+			"amount": 0.4
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_switch",
+			"comparison": "==",
+			"compare_to": 1
 		}
 	}
 }
