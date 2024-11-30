@@ -1,0 +1,99 @@
+{
+    "name": "Constructed Structure",
+    "description": "You don't have a stomach, and you cannot eat food or drink potions. You can consume obsidian or come in contact with lava to regain health.",
+    "hidden": false,
+    "type": "origins:multiple",
+    "no_food": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:food"
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:obsidian"
+                    },
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "no_potions": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:potion"
+            }
+        }
+    },
+    "eat_bones": {
+        "type": "origins:edible_item",
+        "entity_action": [
+            {
+                "type": "origins:heal",
+                "amount": 2
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 3,
+                "action": {
+                    "type": "origins:heal",
+                    "amount": 2
+                }
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 5,
+                "action": {
+                    "type": "origins:heal",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.iron_golem.repair"
+            }
+        ],
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:obsidian"
+            }
+        },
+        "food_component": {
+            "nutrition": 0,
+            "saturation": 0,
+            "can_always_eat": true
+        }
+    },
+    "lava": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:lava",
+            "comparison": ">=",
+            "compare_to": 0.01
+        }
+    },
+    "no_healing": {
+        "type": "origins:disable_regen"
+    },
+    "no_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:feed",
+            "nutrition": 4,
+            "saturation": 0
+        }
+    }
+}

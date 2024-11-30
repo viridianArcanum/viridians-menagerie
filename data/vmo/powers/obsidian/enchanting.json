@@ -1,0 +1,2940 @@
+{
+    "name": "Enchanting",
+    "description": "You are able to enchant unenchanted equipment with a single max-level enchantment once you are level 30 or above, without an enchanting table. This ability consumes 5 levels, and requires you to have 3 lapis lazuli in your inventory to activate.",
+    "type": "origins:multiple",
+    "equipment": {
+        "type": "origins:active_self",
+        "entity_action": [
+            {
+                "type": "origins:if_else_list",
+                "actions": [
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:swords"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {    
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s bane_of_arthropods 5"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:fire_aspect 2"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:knockback 2"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:looting 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:sharpness 5"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:smite 5"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:sweeping 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {    
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s bane_of_arthropods 5"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:fire_aspect 2"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:knockback 2"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:looting 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:sharpness 5"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:smite 5"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:sweeping 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {    
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s bane_of_arthropods 5"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:fire_aspect 2"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:knockback 2"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:looting 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:sharpness 5"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:smite 5"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:sweeping 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "minecraft:axes"
+                                    },
+                                    {
+                                        "tag": "minecraft:pickaxes"
+                                    },
+                                    {
+                                        "tag": "minecraft:shovels"
+                                    },
+                                    {
+                                        "tag": "minecraft:hoes"
+                                    }
+                                ]
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:efficiency 5"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:fortune 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:silk_touch"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:efficiency 5"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:fortune 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:silk_touch"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:efficiency 5"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:fortune 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:silk_touch"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "action": [
+                            {    
+                                "type": "origins:execute_command",
+                                "command": "xp add @s 5 levels"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "give @s lapis_lazuli 3"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                               "command": "tellraw @s [\"This cannot be enchanted.\"]"
+                            }
+                        ],
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "minecraft:axes"
+                                    },
+                                    {
+                                        "tag": "minecraft:pickaxes"
+                                    },
+                                    {
+                                        "tag": "minecraft:shovels"
+                                    },
+                                    {
+                                        "tag": "minecraft:hoes"
+                                    },
+                                    {
+                                        "tag": "minecraft:swords"
+                                    },
+                                    {
+                                        "tag": "c:tools/bows"
+                                    },
+                                    {
+                                        "tag": "c:tools/crossbows"
+                                    },
+                                    {
+                                        "tag": "c:tools/fishing_rods"
+                                    },
+                                    {
+                                        "item": "minecraft:trident"
+                                    },
+                                    {
+                                        "tag": "c:armors"
+                                    },
+                                    {
+                                        "tag": "c:tools/mace"
+                                    }
+                                ],
+                                "inverted": true
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:all_of",
+                            "conditions": [
+                                {
+                                    "type": "origins:equipped_item",
+                                    "equipment_slot": "mainhand",
+                                    "item_condition": {
+                                        "type": "origins:ingredient",
+                                        "ingredient": [
+                                            {
+                                                "tag": "c:tools/bows"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {      
+                                    "type": "origins:equipped_item",
+                                    "equipment_slot": "mainhand",
+                                    "item_condition": {
+                                        "type": "origins:ingredient",
+                                        "ingredient": [
+                                            {
+                                                "tag": "c:tools/crossbows"
+                                            }
+                                        ]
+                                    },
+                                    "inverted": true
+                                }
+                            ] 
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:flame"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:infinity"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:power 5"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:punch 2"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:flame"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:infinity"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:power 5"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:punch 2"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:flame"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:infinity"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:power 5"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:punch 2"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "c:tools/crossbows"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:multishot"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:piercing 4"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:quick_charge 3"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:multishot"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:piercing 4"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:quick_charge 3"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:multishot"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:piercing 4"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:quick_charge 3"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "c:tools/fishing_rods"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:luck_of_the_sea 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:lure 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:luck_of_the_sea 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:lure 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:luck_of_the_sea 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:lure 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:trident"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s channelling"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:impaling 5"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:loyalty 3"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:riptide 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s channelling"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:impaling 5"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:loyalty 3"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:riptide 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s channelling"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:impaling 5"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:loyalty 3"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:riptide 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:head_armor"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:aqua_affinity"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s blast_protection 4"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:fire_protection 4"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:projectile_protection 4"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:protection 4"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:respiration 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:thorns 3"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:aqua_affinity"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s blast_protection 4"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:fire_protection 4"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:projectile_protection 4"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:protection 4"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:respiration 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:thorns 3"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:aqua_affinity"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s blast_protection 4"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:fire_protection 4"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:projectile_protection 4"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:protection 4"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:respiration 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:thorns 3"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:all_of",
+                            "conditions": [
+                                {
+                                    "type": "origins:equipped_item",
+                                    "equipment_slot": "mainhand",
+                                    "item_condition": {
+                                        "type": "origins:ingredient",
+                                        "ingredient": [
+                                            {
+                                                "tag": "minecraft:chest_armor"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {      
+                                    "type": "origins:equipped_item",
+                                    "equipment_slot": "mainhand",
+                                    "item_condition": {
+                                        "type": "origins:ingredient",
+                                        "ingredient": [
+                                            {
+                                                "item": "minecraft:elytra"
+                                            }
+                                        ]
+                                    },
+                                    "inverted": true
+                                }
+                            ] 
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s blast_protection 4"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:fire_protection 4"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:projectile_protection 4"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:protection 4"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:thorns 3"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s blast_protection 4"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:fire_protection 4"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:projectile_protection 4"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:protection 4"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:thorns 3"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s blast_protection 4"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:fire_protection 4"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:projectile_protection 4"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:protection 4"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:thorns 3"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:leg_armor"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s blast_protection 4"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:projectile_protection 4"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:protection 4"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:swift_sneak 3"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:thorns 3"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s blast_protection 4"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:projectile_protection 4"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:protection 4"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:swift_sneak 3"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:thorns 3"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s blast_protection 4"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:projectile_protection 4"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:protection 4"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:swift_sneak 3"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:thorns 3"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "minecraft:foot_armor"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s blast_protection 4"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s depth_strider 3"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                          "type": "origins:execute_command",
+                                          "command": "enchant @s minecraft:feather_falling 4"
+                                      },
+                                      "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:fire_protection 4"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:frost_walker 2"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:projectile_protection 4"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:protection 4"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:soul_speed 3"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:thorns 3"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s blast_protection 4"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s depth_strider 3"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                  "type": "origins:execute_command",
+                                                  "command": "enchant @s minecraft:feather_falling 4"
+                                              },
+                                              "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:fire_protection 4"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:frost_walker 2"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:projectile_protection 4"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:protection 4"
+                                                },
+                                                "weight": 10
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:soul_speed 3"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:thorns 3"
+                                                },
+                                                "weight": 1
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s blast_protection 4"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s depth_strider 3"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                      "type": "origins:execute_command",
+                                                      "command": "enchant @s minecraft:feather_falling 4"
+                                                  },
+                                                  "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:fire_protection 4"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:frost_walker 2"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:projectile_protection 4"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:protection 4"
+                                                    },
+                                                    "weight": 10
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:soul_speed 3"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:thorns 3"
+                                                    },
+                                                    "weight": 1
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "c:tools/mace"
+                                }
+                            }
+                        },
+                        "action": [
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "element": {    
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s bane_of_arthropods 5"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:breach 4"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:density 5"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:fire_aspect 2"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:mending"
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:smite 5"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:unbreaking 3"
+                                        },
+                                        "weight": 5
+                                    },
+                                    {
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "enchant @s minecraft:wind_burst 3"
+                                        },
+                                        "weight": 5
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:chance",
+                                "success_action": [
+                                    {
+                                        "type": "origins:choice",
+                                        "actions": [
+                                            {
+                                                "element": {    
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s bane_of_arthropods 5"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:breach 4"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:density 5"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:fire_aspect 2"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:mending"
+                                                },
+                                                "weight": 2
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:smite 5"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:unbreaking 3"
+                                                },
+                                                "weight": 5
+                                            },
+                                            {
+                                                "element": {
+                                                    "type": "origins:execute_command",
+                                                    "command": "enchant @s minecraft:wind_burst 3"
+                                                },
+                                                "weight": 5
+                                            }
+                                        ]
+                                    },
+                                    {    
+                                        "type": "origins:chance",
+                                        "success_action": {
+                                            "type": "origins:choice",
+                                            "actions": [
+                                                {
+                                                    "element": {    
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s bane_of_arthropods 5"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:breach 4"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:density 5"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:fire_aspect 2"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:mending"
+                                                    },
+                                                    "weight": 2
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:smite 5"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:unbreaking 3"
+                                                    },
+                                                    "weight": 5
+                                                },
+                                                {
+                                                    "element": {
+                                                        "type": "origins:execute_command",
+                                                        "command": "enchant @s minecraft:wind_burst 3"
+                                                    },
+                                                    "weight": 5
+                                                }
+                                            ]
+                                        },
+                                        "chance": 0.3
+                                    }
+                                ],
+                                "chance": 0.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {    
+                "type": "origins:execute_command",
+                "command": "xp add @s -5 levels"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "clear @s lapis_lazuli 3"
+            }
+        ],
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:inventory",
+                    "process_mode": "items",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:lapis_lazuli"
+                        }
+                    },
+                    "comparison": ">",
+                    "compare_to": 2
+                },
+                {      
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:enchantment",
+                        "comparison": "<",
+                        "compare_to": 1
+                    }
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 30
+                }
+            ]
+        }
+    },
+    "books": {
+        "type": "origins:active_self",
+        "entity_action": [
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:choice",
+                "actions": [
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "aqua_affinity": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "bane_of_arthropods": 5
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "blast_protection": 4
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "breach": 4
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "channeling": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "binding_curse": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "vanishing_curse": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "density": 5
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "depth_strider": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "efficiency": 5
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "feather_falling": 4
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "fire_aspect": 2
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "fire_protection": 4
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "flame": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "fortune": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "frost_walker": 2
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "impaling": 5
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "infinity": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "knockback": 2
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "looting": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "loyalty": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "luck_of_the_sea": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "lure": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "mending": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "multishot": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "piercing": 4
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "power": 5
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "projectile_protection": 4
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "protection": 4
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "punch": 2
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "quick_charge": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "respiration": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "riptide": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "sharpness": 5
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "silk_touch": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "smite": 5
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "soul_speed": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "sweeping_edge": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "swift_sneak": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "thorns": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "unbreaking": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "element": {
+                            "type": "origins:give",
+                            "stack": {
+                                "id": "minecraft:enchanted_book",
+                                "components": {
+                                    "stored_enchantments": {
+                                        "levels": {
+                                            "wind_burst": 3
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "weight": 1
+                    }
+                ]
+            },
+            {    
+                "type": "origins:execute_command",
+                "command": "xp add @s -5 levels"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "clear @s lapis_lazuli 3"
+            }
+        ],
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:book"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:inventory",
+                    "process_mode": "items",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:lapis_lazuli"
+                        }
+                    },
+                    "comparison": ">",
+                    "compare_to": 2
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 30
+                }
+            ]
+        }
+    }
+}

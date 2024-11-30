@@ -1,0 +1,34 @@
+{
+    "name": "Pickaxe Vulnerability",
+    "description": "Enemies do extra damage against you when wielding a diamond or netherite pickaxe.",
+    "type": "origins:modify_damage_taken",
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:any_of",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:diamond_pickaxe"
+                        }
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:netherite_pickaxe"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "modifier": {
+        "id": "*:*",
+        "operation": "add_base_early",
+        "amount": 6
+    }
+}

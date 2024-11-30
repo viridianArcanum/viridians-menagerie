@@ -1,0 +1,19 @@
+{
+	"name": "Obsidian Construct",
+    "description": "(Obsidian)\n\nObsidian is an inherently magical material, and Obsidian Constructs are themselves inherently magical.",
+    "powers": [
+		"vmo:obsidian/no_organs",
+        "vmo:obsidian/obsidian",
+        "vmo:strength",
+		"origins:fire_immunity",
+		"vmo:obsidian/enchanting",
+		"vmo:obsidian/pickaxe",
+		"vmo:sink_in_water",
+		"origins:no_shield"
+	],
+	"icon": {
+		"id": "minecraft:obsidian"
+	},
+	"order": 0,
+	"impact": 3
+}
