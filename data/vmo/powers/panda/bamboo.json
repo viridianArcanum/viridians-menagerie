@@ -1,0 +1,15 @@
+{
+    "name": "Specialist Herbivore",
+    "description": "You can eat bamboo.",
+    "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:bamboo"
+        }
+    },
+    "food_component": {
+        "nutrition": 5,
+        "saturation": 0.6
+    }
+}

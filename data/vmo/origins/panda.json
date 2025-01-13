@@ -1,0 +1,17 @@
+{
+	"name": "Jungle Ursus",
+    "description": "(Panda)\n\nJungle Ursus are larger and stronger than humans, and are highly adapted for life in the jungle.",
+    "powers": [
+		"vmo:panda/natural_armor",
+        "vmo:strength",
+        "origins:climbing",
+        "vmo:panda/bamboo",
+        "origins:vegetarian",
+        "origins:no_shield"
+	],
+	"icon": {
+		"id": "minecraft:bamboo"
+	},
+	"order": 0,
+	"impact": 1
+}
