@@ -7,11 +7,12 @@
         "vmo:phantom/shed",
         "vmo:night_vision",
 		"vmo:phantom/no_sleep",
-		"vmo:phantom/armor",
+		"vmo:elytra/armor",
         "vmo:creeper/fear_of_cats",
 		"vmo:burn_in_sunlight",
 		"vmo:undead",
 		"vmo:phantom/neutral",
+		"vmo:ghast/particles_ash",
 		"vmo:phantom/noise_button"
 	],
 	"icon": {
