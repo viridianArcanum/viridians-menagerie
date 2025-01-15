@@ -6,6 +6,7 @@
 		"vmo:hoglin/heavy",
 		"vmo:hoglin/charge",
 		"vmo:hoglin/launch",
+		"vmo:zombification",
 		"vmo:hoglin/warped_fungus",
 		"vmo:hoglin/neutral",
 		"vmo:hoglin/noise_button"
@@ -14,5 +15,5 @@
 		"id": "minecraft:crimson_fungus"
 	},
 	"order": 0,
-	"impact": 1
+	"impact": 3
 }
