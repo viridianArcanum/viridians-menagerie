@@ -1,0 +1,141 @@
+{
+    "name": "Gold Proficiency",
+    "description": "You are proficient at wielding golden equipment, and are able to use them to their fullest potential. Golden armor has a higher armor value. Golden weapons do extra damage. Golden equipment lasts much longer. You can mine blocks that would usually require an iron pickaxe with a golden pickaxe.",
+    "type": "origins:multiple",
+    "head": {
+        "type": "extraorigins:modify_item_attribute",
+        "equipment_slot": "head",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "extraorigins:golden_armor"
+            }
+        },
+        "modifier": {
+            "id": "*:*_head",
+            "attribute": "minecraft:generic.armor",
+            "operation": "add_base_early",
+            "amount": 1
+        }
+    },
+    "chest": {
+        "type": "extraorigins:modify_item_attribute",
+        "equipment_slot": "chest",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "extraorigins:golden_armor"
+            }
+        },
+        "modifier": {
+            "id": "*:*_chest",
+            "attribute": "minecraft:generic.armor",
+            "operation": "add_base_early",
+            "amount": 2
+        }
+    },
+    "legs": {
+        "type": "extraorigins:modify_item_attribute",
+        "equipment_slot": "legs",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "extraorigins:golden_armor"
+            }
+        },
+        "modifier": {
+            "id": "*:*_legs",
+            "attribute": "minecraft:generic.armor",
+            "operation": "add_base_early",
+            "amount": 2
+        }
+    },
+    "feet": {
+        "type": "extraorigins:modify_item_attribute",
+        "equipment_slot": "feet",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "extraorigins:golden_armor"
+            }
+        },
+        "modifier": {
+            "id": "*:*_feet",
+            "attribute": "minecraft:generic.armor",
+            "operation": "add_base_early",
+            "amount": 1
+        }
+    },
+    "mainhand": {
+        "type": "extraorigins:modify_item_attribute",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "extraorigins:golden_tools"
+            }
+        },
+        "modifier": {
+            "id": "*:*_mainhand",
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "add_base_early",
+            "amount": 2.5
+        }
+    },
+    "unbreaking_armor": {
+        "type": "extraorigins:innate_unbreaking",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "extraorigins:golden_armor"
+            }
+        },
+        "level": 3
+    },
+    "unbreaking_tools": {
+        "type": "extraorigins:innate_unbreaking",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "extraorigins:golden_tools"
+            }
+        },
+        "level": 15
+    },
+    "harvest": {
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:all_of",
+            "conditions": [
+                {
+                    "type": "origins:any_of",
+                    "conditions": [
+                        {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:needs_stone_tool"
+                        },
+                        {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:needs_iron_tool"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:mineable/pickaxe"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:golden_pickaxe"
+                }
+            }
+        },
+        "allow": true
+    }
+}

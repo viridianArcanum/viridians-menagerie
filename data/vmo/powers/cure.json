@@ -1,0 +1,102 @@
+{
+    "name": "Cure",
+    "description": "You can cure your zombification by consuming a golden apple.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 300,
+        "start_value": 300,
+        "min_action": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.zombie_villager.converted"
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:origin",
+                    "origin": "vmo:zoglin",
+                    "layer": "origins:origin"
+                },
+                "if_action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s origins:origin vmo:hoglin"
+                },
+                "else_action": {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s origins:origin vmo:piglin"
+                }
+            }
+        ],
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 19,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "<",
+                "compare_to": 300
+            }
+        }
+    },
+    "apple": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "check": {
+        "type": "origins:action_on_item_use",
+        "entity_action": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.zombie_villager.cure"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "id": "minecraft:strength",
+                    "duration": 300
+                }
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "*:*_apple",
+                "change": 1
+            }
+        ],
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:golden_apple"
+            }
+        },
+        "trigger": "finish"
+    },
+    "decrease": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_apple",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "shaking": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_apple",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    }
+}

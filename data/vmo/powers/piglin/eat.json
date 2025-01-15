@@ -1,0 +1,37 @@
+{
+    "name": "Specialized Diet",
+    "description": "You can only eat meat and food with gold in it.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:all_of",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "type": "origins:any_of",
+                "conditions": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "minecraft:meat"
+                    }
+                },
+                "inverted": true
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "extraorigins:golden_food"
+                },
+                "inverted": true
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:ignore_diet"
+                },
+                "inverted": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Piglin",
+    "description": "Piglins are very fond of gold, and are experts at utilizing it.",
+    "powers": [
+        "vmo:piglin/gold",
+        "vmo:piglin/craft",
+        "vmo:piglin/eat",
+        "extraorigins:piglin_neutrality",
+        "vmo:zombification",
+        "vmo:piglin/soul_fire",
+        "vmo:piglin/noise_button"
+    ],
+    "icon": {
+        "id": "minecraft:golden_sword"
+    },
+	"order": 0,
+	"impact": 3
+}

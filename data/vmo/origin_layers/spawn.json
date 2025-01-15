@@ -8,31 +8,29 @@
     "origins": [
         {
             "condition": {
-                "type": "origins:origin",
-                "origin": "vmo:blaze",
-                "layer": "origins:origin"
-            },
-            "origins": [
-                "vmo:spawn/nether",
-                "vmo:spawn/overworld"
-            ]
-        },
-        {
-            "condition": {
-                "type": "origins:origin",
-                "origin": "vmo:ghast",
-                "layer": "origins:origin"
-            },
-            "origins": [
-                "vmo:spawn/nether",
-                "vmo:spawn/overworld"
-            ]
-        },
-        {
-            "condition": {
-                "type": "origins:origin",
-                "origin": "vmo:hoglin",
-                "layer": "origins:origin"
+                "type": "origins:any_of",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "origin": "vmo:blaze",
+                        "layer": "origins:origin"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "origin": "vmo:ghast",
+                        "layer": "origins:origin"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "origin": "vmo:hoglin",
+                        "layer": "origins:origin"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "origin": "vmo:piglin",
+                        "layer": "origins:origin"
+                    }
+                ]
             },
             "origins": [
                 "vmo:spawn/nether",
