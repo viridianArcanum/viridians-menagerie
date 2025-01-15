@@ -31,10 +31,12 @@
         "vmo:llama",
         "vmo:magma_cube",
         "vmo:moss",
+        "vmo:mushroom",
         "vmo:obsidian",
         "vmo:panda",
         "vmo:phantom",
         "vmo:piglin",
+        "vmo:plant",
         "vmo:polar_bear",
         "vmo:rabbit",
         "vmo:ravager",
@@ -60,6 +62,7 @@
         "vmo:wither_skeleton",
         "vmo:wolf",
         "vmo:zoglin",
-        "vmo:zombie"
+        "vmo:zombie",
+        "vmo:zombified_piglin"
     ]
 }
