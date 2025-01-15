@@ -1,0 +1,19 @@
+{
+	"name": "Zogling",
+	"description": "(Zoglin)\n\nThe zombified remains of hoglings, zoglings are just as, if not more powerful than their living counterparts.",
+	"powers": [
+        "vmo:undead_fireproof",
+		"vmo:cure",
+		"vmo:hoglin/thick_hide",
+		"vmo:hoglin/heavy",
+		"vmo:hoglin/charge",
+		"vmo:hoglin/launch",
+		"vmo:zoglin/neutral",
+		"vmo:zoglin/noise_button"
+	],
+	"icon": {
+		"id": "minecraft:crimson_fungus"
+	},
+	"order": 0,
+	"impact": 3
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Neutral Zoglin",
+    "hidden": true,
+    "type": "extraorigins:mob_neutrality",
+    "entity_types": [
+        "minecraft:hoglin",
+        "minecraft:zoglin",
+        "minecraft:piglin"
+    ]
+}
